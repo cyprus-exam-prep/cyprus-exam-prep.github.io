@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyprus Exam Mini-Mock</title>
+<link rel="canonical" href="https://cyprus-exam-prep.github.io/">
+<meta property="og:title" content="Cyprus citizenship exam: free 15-question practice test">
+<meta property="og:description" content="Greek questions with English and Russian translations, every answer checked against an official source.">
+<meta name="description" content="Free 15-question practice test for the Cyprus citizenship exam on political and social reality. Greek with English and Russian translations, every answer sourced.">
+<style>
+:root{--bg:#faf8f3;--panel:#fff;--fg:#1f1e1b;--muted:#6b675e;--line:#e3ded2;--accent:#1d5f8a;--ok:#2f7a3d;--bad:#b23a2e;--okbg:#e9f4ea;--badbg:#fbecea}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171614;--panel:#211f1c;--fg:#ece8df;--muted:#a39e93;--line:#38342e;--accent:#7cb7e0;--ok:#7ccf8a;--bad:#f08a7e;--okbg:#1f2e21;--badbg:#3a2220}}
+:root[data-theme="dark"]{--bg:#171614;--panel:#211f1c;--fg:#ece8df;--muted:#a39e93;--line:#38342e;--accent:#7cb7e0;--ok:#7ccf8a;--bad:#f08a7e;--okbg:#1f2e21;--badbg:#3a2220}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:1.9rem;line-height:1.2;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 20px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;padding:0;list-style:none}
+.facts li{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem;color:var(--muted);background:var(--panel)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;margin:0 0 14px}
+.num{font-size:.8rem;color:var(--muted);margin:0 0 4px}
+.gr{font-weight:600;margin:0 0 4px}
+.tr{font-size:.85rem;color:var(--muted);margin:0 0 12px}
+.opts{display:grid;gap:8px}
+.opts button{text-align:left;font:inherit;color:inherit;background:transparent;border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer}
+.opts button:hover:not(:disabled){border-color:var(--accent)}
+.opts button:disabled{cursor:default}
+.opts .right{border-color:var(--ok);background:var(--okbg)}
+.opts .wrong{border-color:var(--bad);background:var(--badbg)}
+.why{display:none;margin:12px 0 0;font-size:.9rem}
+.why.show{display:block}
+.why a{color:var(--accent)}
+.score{position:sticky;bottom:12px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.score b{font-family:Georgia,serif;font-weight:400;font-size:1.4rem}
+.cta{background:var(--panel);border:1px solid var(--accent);border-radius:10px;padding:18px;margin:24px 0 0}
+.cta a{color:var(--accent)}
+.cta h2{font-family:Georgia,serif;font-weight:400;margin:0 0 6px;font-size:1.3rem}
+.foot{color:var(--muted);font-size:.8rem;margin-top:28px}
+</style>
+</head>
+<body>
+<main>
+<h1>Cyprus citizenship exam: free 15-question mini-mock</h1>
+<p class="lead">Practice for the exam on the <em>Contemporary Political and Social Reality of Cyprus</em>. Questions in Greek, as in the real exam, with English and Russian translations. Every answer is checked against an official source.</p>
+<ul class="facts"><li>Real exam: 25 questions</li><li>45 minutes</li><li>Pass: 60% (15/25)</li><li>Next sitting: 21 Nov 2026</li></ul>
+<div id="quiz"></div>
+<div class="score" aria-live="polite"><span>Score: <b id="sc">0</b> / <span id="tot">0</span> answered <span id="ans">0</span></span><span id="verdict"></span></div>
+<section class="cta">
+<h2>Want all 14 topics?</h2>
+<p>The Cyprus Culture Exam Pack (€12): topic summaries in Greek with English, a 200-word exam-Greek glossary with Russian, 300 sourced practice questions, two timed mocks, and a current office-holders sheet re-checked before every sitting.</p>
+<p id="buy">Coming soon. Get a free practice question every day: <a href="https://t.me/cyprusexamprep">Telegram</a> · <a href="https://www.facebook.com/profile.php?id=61595988694793">Facebook</a></p>
+</section>
+<p class="foot">Independent study aid. Not affiliated with or endorsed by the Ministry of Education, Sport and Youth or any government body. No pass is guaranteed. Sources checked 28 October 2026.</p>
+</main>
+<script>
+const Q = [{"gr": "Πότε απέκτησε την ανεξαρτησία της η Κυπριακή Δημοκρατία;", "en": "When did the Republic of Cyprus gain independence?", "ru": "Когда Республика Кипр получила независимость?", "o": ["1955", "1960", "1974", "2004"], "a": 1, "why": "Independence from British rule came in 1960.", "src": "Cyprus at a Glance, Press and Information Office (gov.cy)", "url": "https://publications.gov.cy/assets/user/publications/GAAG/CAAG_EN_2018/CAAG_EN_2018.pdf"}, {"gr": "Πότε έγινε η Κύπρος μέλος της Ευρωπαϊκής Ένωσης;", "en": "When did Cyprus join the European Union?", "ru": "Когда Кипр вступил в Европейский союз?", "o": ["1990", "1 Μαΐου 2004", "1 Ιανουαρίου 2008", "2013"], "a": 1, "why": "Cyprus joined the EU on 1 May 2004.", "src": "European Union: Cyprus country profile (europa.eu)", "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/cyprus_en"}, {"gr": "Από πότε το νόμισμα της Κύπρου είναι το ευρώ;", "en": "Since when has the euro been the currency of Cyprus?", "ru": "С какого времени валюта Кипра — евро?", "o": ["1 Μαΐου 2004", "1 Ιανουαρίου 2008", "1 Ιανουαρίου 2010", "1 Ιανουαρίου 2013"], "a": 1, "why": "The euro replaced the Cyprus pound on 1 January 2008.", "src": "Visit Cyprus (Deputy Ministry of Tourism): Currency and exchange", "url": "https://www.visitcyprus.com/el/useful-info/%CE%BD%CF%8C%CE%BC%CE%B9%CF%83%CE%BC%CE%B1-%CE%BA%CE%B1%CE%B9-%CF%83%CF%85%CE%BD%CE%AC%CE%BB%CE%BB%CE%B1%CE%B3%CE%BC%CE%B1/"}, {"gr": "Ποιο είναι το πολίτευμα της Κυπριακής Δημοκρατίας;", "en": "What is the system of government of the Republic of Cyprus?", "ru": "Какова форма правления Республики Кипр?", "o": ["Προεδρική δημοκρατία", "Κοινοβουλευτική δημοκρατία", "Συνταγματική μοναρχία", "Ομοσπονδιακή δημοκρατία"], "a": 0, "why": "Cyprus is a presidential republic.", "src": "European Union: Cyprus country profile (europa.eu)", "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/cyprus_en"}, {"gr": "Πόσα χρόνια διαρκεί η θητεία του Προέδρου της Δημοκρατίας;", "en": "How long is the President's term of office?", "ru": "Сколько лет длится срок полномочий Президента?", "o": ["4 χρόνια", "5 χρόνια", "6 χρόνια", "7 χρόνια"], "a": 1, "why": "The President is elected for five years.", "src": "Cyprus at a Glance, Press and Information Office (gov.cy)", "url": "https://publications.gov.cy/assets/user/publications/GAAG/CAAG_EN_2018/CAAG_EN_2018.pdf"}, {"gr": "Ποιος είναι αρχηγός του κράτους και της κυβέρνησης;", "en": "Who is head of state and head of government?", "ru": "Кто является главой государства и правительства?", "o": ["Ο Πρωθυπουργός", "Ο Πρόεδρος της Δημοκρατίας", "Ο Πρόεδρος της Βουλής", "Ο Γενικός Εισαγγελέας"], "a": 1, "why": "In a presidential republic the President holds both roles; Cyprus has no Prime Minister.", "src": "European Union: Cyprus country profile (europa.eu)", "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/cyprus_en"}, {"gr": "Ποια μέρα γιορτάζεται η Ανεξαρτησία της Κύπρου;", "en": "On which day is Cyprus Independence Day celebrated?", "ru": "В какой день отмечается День независимости Кипра?", "o": ["25 Μαρτίου", "1 Απριλίου", "1 Οκτωβρίου", "28 Οκτωβρίου"], "a": 2, "why": "Independence Day is 1 October. 25 March, 1 April and 28 October are other national holidays.", "src": "Visit Cyprus: Working hours and public holidays", "url": "https://www.visitcyprus.com/el/useful-info/%CF%8E%CF%81%CE%B1-%CF%89%CF%81%CE%AC%CF%81%CE%B9%CE%B1-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BA%CE%B1%CE%B9-%CE%B1%CF%81%CE%B3%CE%AF%CE%B5%CF%82/"}, {"gr": "Ποια από τις παρακάτω ημερομηνίες ΔΕΝ είναι δημόσια αργία στην Κύπρο;", "en": "Which of these dates is NOT a public holiday in Cyprus?", "ru": "Какая из этих дат НЕ является государственным праздником на Кипре?", "o": ["25 Μαρτίου", "1 Απριλίου", "4 Ιουλίου", "28 Οκτωβρίου"], "a": 2, "why": "4 July is not a Cypriot holiday; the other three are national holidays.", "src": "Visit Cyprus: Working hours and public holidays", "url": "https://www.visitcyprus.com/el/useful-info/%CF%8E%CF%81%CE%B1-%CF%89%CF%81%CE%AC%CF%81%CE%B9%CE%B1-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BA%CE%B1%CE%B9-%CE%B1%CF%81%CE%B3%CE%AF%CE%B5%CF%82/"}, {"gr": "Με ποια γιορτή συμπίπτει ο Κατακλυσμός;", "en": "Kataklysmos falls on which feast?", "ru": "С каким праздником совпадает Катаклизмос?", "o": ["Τα Χριστούγεννα", "Την Πεντηκοστή", "Το Πάσχα", "Την Κοίμηση της Θεοτόκου"], "a": 1, "why": "Kataklysmos is the Monday of Pentecost (Πεντηκοστή).", "src": "Visit Cyprus: Working hours and public holidays", "url": "https://www.visitcyprus.com/el/useful-info/%CF%8E%CF%81%CE%B1-%CF%89%CF%81%CE%AC%CF%81%CE%B9%CE%B1-%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82-%CE%BA%CE%B1%CE%B9-%CE%B1%CF%81%CE%B3%CE%AF%CE%B5%CF%82/"}, {"gr": "Ποιες είναι οι επίσημες γλώσσες της Κυπριακής Δημοκρατίας;", "en": "What are the official languages of the Republic of Cyprus?", "ru": "Какие официальные языки Республики Кипр?", "o": ["Ελληνικά και Αγγλικά", "Ελληνικά και Τουρκικά", "Μόνο Ελληνικά", "Ελληνικά, Τουρκικά και Αγγλικά"], "a": 1, "why": "Greek and Turkish are official; English is widely spoken but not official.", "src": "Visit Cyprus: Languages and religions", "url": "https://www.visitcyprus.com/useful-info/languages-religions/"}, {"gr": "Ποια είναι η ψηλότερη κορυφή της Κύπρου;", "en": "What is the highest peak in Cyprus?", "ru": "Какая самая высокая вершина Кипра?", "o": ["Ο Όλυμπος", "Ο Μαχαιράς", "Το Σταυροβούνι", "Ο Πενταδάκτυλος"], "a": 0, "why": "Mount Olympus in the Troodos range is the highest point.", "src": "Cyprus at a Glance, Press and Information Office (gov.cy)", "url": "https://publications.gov.cy/assets/user/publications/GAAG/CAAG_EN_2018/CAAG_EN_2018.pdf"}, {"gr": "Πόσες έδρες της Βουλής των Αντιπροσώπων αντιστοιχούν στους Ελληνοκύπριους;", "en": "How many seats in the House of Representatives are allocated to Greek Cypriots?", "ru": "Сколько мест в Палате представителей отведено греко-киприотам?", "o": ["24", "50", "56", "80"], "a": 2, "why": "56 of the 80 seats are Greek Cypriot; 24 are reserved for Turkish Cypriots.", "src": "Cyprus at a Glance, Press and Information Office (gov.cy)", "url": "https://publications.gov.cy/assets/user/publications/GAAG/CAAG_EN_2018/CAAG_EN_2018.pdf"}, {"gr": "Ποιος είναι ο κωδικός κλήσης για την Κύπρο από το εξωτερικό;", "en": "What is the dialling code for Cyprus from abroad?", "ru": "Какой телефонный код Кипра при звонке из-за границы?", "o": ["0030", "00357", "00356", "0044"], "a": 1, "why": "Dial 00357 and then the eight-digit number.", "src": "Visit Cyprus: Telecommunications", "url": "https://www.visitcyprus.com/el/useful-info/%CF%84%CE%B7%CE%BB%CE%B5%CF%80%CE%B9%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%AF%CE%B5%CF%82/"}, {"gr": "Ποια πόλη αναφέρεται ως η τελευταία διαιρεμένη πρωτεύουσα της Ευρώπης;", "en": "Which city is described as the last divided capital in Europe?", "ru": "Какой город называют последней разделённой столицей Европы?", "o": ["Η Λεμεσός", "Η Λάρνακα", "Η Λευκωσία", "Η Πάφος"], "a": 2, "why": "Nicosia (Λευκωσία), the capital, is described this way by the official tourism site.", "src": "Visit Cyprus: About Cyprus", "url": "https://www.visitcyprus.com/useful-info/about-cyprus/"}, {"gr": "Ποιο από τα παρακάτω είναι ανακριβές;", "en": "Which of the following is INACCURATE?", "ru": "Какое из утверждений НЕВЕРНО?", "o": ["Η Κύπρος έγινε μέλος της ΕΕ το 2004.", "Ο Πρόεδρος είναι αρχηγός του κράτους και της κυβέρνησης.", "Η Κύπρος είναι κοινοβουλευτική δημοκρατία.", "Η ώρα της Κύπρου είναι GMT+2."], "a": 2, "why": "Cyprus is a presidential, not parliamentary, republic. 'Ανακριβές' means 'inaccurate' — a favourite exam word.", "src": "European Union: Cyprus country profile (europa.eu)", "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/cyprus_en"}];
+const L = "αβγδ";
+let score = 0, answered = 0;
+const root = document.getElementById("quiz");
+document.getElementById("tot").textContent = Q.length;
+Q.forEach((q, i) => {
+  const c = document.createElement("div"); c.className = "card";
+  const n = document.createElement("p"); n.className = "num"; n.textContent = "Question " + (i + 1);
+  const g = document.createElement("p"); g.className = "gr"; g.textContent = q.gr;
+  const t = document.createElement("p"); t.className = "tr"; t.textContent = "EN: " + q.en + " · RU: " + q.ru;
+  const o = document.createElement("div"); o.className = "opts";
+  const w = document.createElement("p"); w.className = "why";
+  const ws = document.createElement("span"); ws.textContent = q.why + " Source: ";
+  const a = document.createElement("a"); a.href = q.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = q.src;
+  w.append(ws, a);
+  q.o.forEach((txt, j) => {
+    const b = document.createElement("button"); b.type = "button";
+    b.textContent = "(" + L[j] + ") " + txt;
+    b.addEventListener("click", () => {
+      [...o.children].forEach((x, k) => { x.disabled = true; if (k === q.a) x.classList.add("right"); });
+      if (j === q.a) score++; else b.classList.add("wrong");
+      answered++; w.classList.add("show"); update();
+    });
+    o.appendChild(b);
+  });
+  c.append(n, g, t, o, w); root.appendChild(c);
+});
+function update() {
+  document.getElementById("sc").textContent = score;
+  document.getElementById("ans").textContent = "(" + answered + " of " + Q.length + ")";
+  if (answered === Q.length) {
+    const pass = score / Q.length >= 0.6;
+    document.getElementById("verdict").textContent = pass ? "At the 60% pass line. Keep going." : "Below the 60% pass line.";
+  }
+}
+update();
+</script>
+</body>
+</html>
