@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cyprus-exam-prep.github.io/sitemap.xml
