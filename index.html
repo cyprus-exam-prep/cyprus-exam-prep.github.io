@@ -8,6 +8,10 @@
 <meta property="og:title" content="Cyprus citizenship exam: free 15-question practice test">
 <meta property="og:description" content="Greek questions with English and Russian translations, every answer checked against an official source.">
 <meta name="description" content="Free 15-question practice test for the Cyprus citizenship exam on political and social reality. Greek with English and Russian translations, every answer sourced.">
+<meta property="og:image" content="https://cyprus-exam-prep.github.io/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 :root{--bg:#faf8f3;--panel:#fff;--fg:#1f1e1b;--muted:#6b675e;--line:#e3ded2;--accent:#1d5f8a;--ok:#2f7a3d;--bad:#b23a2e;--okbg:#e9f4ea;--badbg:#fbecea}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171614;--panel:#211f1c;--fg:#ece8df;--muted:#a39e93;--line:#38342e;--accent:#7cb7e0;--ok:#7ccf8a;--bad:#f08a7e;--okbg:#1f2e21;--badbg:#3a2220}}
@@ -38,20 +42,50 @@ h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:1.9rem;
 .cta a{color:var(--accent)}
 .cta h2{font-family:Georgia,serif;font-weight:400;margin:0 0 6px;font-size:1.3rem}
 .foot{color:var(--muted);font-size:.8rem;margin-top:28px}
+
+#challenge{display:none;background:var(--okbg);border:1px solid var(--ok);border-radius:10px;padding:12px 16px;margin:0 0 18px}
+#done{display:none;background:var(--panel);border:1px solid var(--accent);border-radius:10px;padding:18px;margin:18px 0 0}
+#done h2{font-family:Georgia,serif;font-weight:400;margin:0 0 6px;font-size:1.3rem}
+.sharebtns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.sharebtns a,.sharebtns button{font:inherit;font-size:.9rem;color:inherit;background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;text-decoration:none}
+.sharebtns a:hover,.sharebtns button:hover{border-color:var(--accent)}
+#card{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block;margin:10px 0}
+.kit{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.kit a{color:var(--accent)}
+.founding a{color:var(--accent)}
 </style>
 </head>
 <body>
 <main>
-<nav class="top" style="display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.9rem;margin:0 0 22px"><a style="color:var(--accent)" href="exam-guide.html">Exam guide: dates, fee, pass mark</a><a style="color:var(--accent)" href="exam-guide-el.html">Οδηγός (ελληνικά)</a><a style="color:var(--accent)" href="exam-guide-ru.html">Гид (русский)</a><a style="color:var(--accent)" href="topics.html">The 14 topics</a></nav>
+<nav class="top" style="display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.9rem;margin:0 0 22px"><a style="color:var(--accent)" href="exam-guide.html">Exam guide: dates, fee, pass mark</a><a style="color:var(--accent)" href="exam-guide-el.html">Οδηγός (ελληνικά)</a><a style="color:var(--accent)" href="exam-guide-ru.html">Гид (русский)</a><a style="color:var(--accent)" href="topics.html">The 14 topics</a><a style="color:var(--accent)" href="greek-trap-words.html">Greek trap words</a></nav>
 <h1>Cyprus citizenship exam: free 15-question mini-mock</h1>
 <p class="lead">Practice for the exam on the <em>Contemporary Political and Social Reality of Cyprus</em>. Questions in Greek, as in the real exam, with English and Russian translations. Every answer is checked against an official source.</p>
 <ul class="facts"><li>Real exam: 25 questions</li><li>45 minutes</li><li>Pass: 60% (15/25)</li><li>Next sitting: 21 Nov 2026</li></ul>
+<div id="challenge" aria-live="polite"></div>
 <div id="quiz"></div>
 <div class="score" aria-live="polite"><span>Score: <b id="sc">0</b> / <span id="tot">0</span> answered <span id="ans">0</span></span><span id="verdict"></span></div>
+<section id="done" aria-live="polite">
+<h2 id="doneh">Your score</h2>
+<p id="donep"></p>
+<canvas id="cv" width="1080" height="1080" hidden></canvas>
+<img id="card" alt="Score card">
+<p><strong>Challenge a friend</strong> who is also applying:</p>
+<div class="sharebtns">
+<a id="sh-wa" target="_blank" rel="noopener">WhatsApp</a>
+<a id="sh-vb">Viber</a>
+<a id="sh-tg" target="_blank" rel="noopener">Telegram</a>
+<a id="sh-fb" target="_blank" rel="noopener">Facebook</a>
+<button type="button" id="sh-native">Share image…</button>
+<button type="button" id="sh-copy">Copy link</button>
+</div>
+<div class="kit"><p><strong>Free study kit by email:</strong> a 2-week study plan, the exam-day checklist and the exam-Greek glossary. <a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-free-test?utm_source=score">Get the free kit</a> (enter any price, €0 is fine).</p>
+<p>Ready for the full practice? <a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/FOUNDING20">Founding offer: full pack for €6 with code FOUNDING20</a> (first 20 buyers, until 21 November).</p></div>
+</section>
 <section class="cta">
 <h2>Want all 14 topics?</h2>
-<p>The Cyprus Culture Exam Pack (€12): summaries of all 14 topics with the key Greek words, a 90-entry exam-Greek glossary with English and Russian, two full 25-question timed mocks with answers, a 49-question practice bank, and a who's-who of current office-holders (checked 31 October 2026). Every question is in Greek with English and Russian translations and a sourced explanation.</p>
-<p id="buy"><a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack"><b>Get the full pack — €12</b></a></p>
+<p>The Cyprus Culture Exam Pack (€12 incl. VAT, 30-day money-back guarantee): summaries of all 14 topics with the key Greek words, a 90-entry exam-Greek glossary with English and Russian, two full 25-question timed mocks with answers, a 49-question practice bank, and a who's-who of current office-holders (checked 31 October 2026). Every question is in Greek with English and Russian translations and a sourced explanation.</p>
+<p class='founding' style='margin:0 0 8px'><strong>Founding offer:</strong> the first 20 buyers pay €6 instead of €12 with code FOUNDING20, until 21 November. <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/FOUNDING20'>Get it for €6</a></p>
+<p id="buy"><a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack"><b>Get the full pack — €12 incl. VAT</b></a></p>
 <p>Or get a free practice question every day: <a href="https://t.me/cyprusexamprep">Telegram</a> · <a href="https://www.facebook.com/profile.php?id=61595988694793">Facebook</a></p>
 </section>
 <p class="foot">Independent study aid. Not affiliated with or endorsed by the Ministry of Education, Sport and Youth or any government body. No pass is guaranteed. Sources checked 28 October 2026.</p>
@@ -90,9 +124,51 @@ function update() {
   if (answered === Q.length) {
     const pass = score / Q.length >= 0.6;
     document.getElementById("verdict").textContent = pass ? "At the 60% pass line. Keep going." : "Below the 60% pass line.";
+    showDone();
   }
 }
 update();
+
+(function(){
+  const qs = new URLSearchParams(location.search);
+  const s = parseInt(qs.get('s'), 10);
+  if (!isNaN(s) && s >= 0 && s <= 15) {
+    const b = document.getElementById('challenge');
+    b.textContent = 'Your friend scored ' + s + '/15 on this practice test. Try the same 15 questions and see if you can beat them.';
+    b.style.display = 'block';
+  }
+})();
+function showDone(){
+  const n = Q.length, pct = Math.round(100*score/n), pass = score/n >= 0.6;
+  document.getElementById('doneh').textContent = 'You scored ' + score + '/' + n;
+  document.getElementById('donep').textContent = pass ? 'That is above the 60% pass line. The real exam has 25 questions in 45 minutes.' : 'The pass line is 60% (9 of 15 here, 15 of 25 in the real exam). Keep practising: the topics and the Greek wording are learnable.';
+  const c = document.getElementById('cv'), x = c.getContext('2d');
+  x.fillStyle = '#faf8f3'; x.fillRect(0,0,1080,1080);
+  x.fillStyle = '#1d5f8a'; x.fillRect(0,0,1080,16);
+  x.fillStyle = '#6b675e'; x.font = '40px system-ui,sans-serif'; x.fillText('Cyprus citizenship exam · practice test', 80, 150);
+  x.fillStyle = '#1f1e1b'; x.font = '200px Georgia,serif'; x.fillText(score + '/' + n, 80, 420);
+  x.font = '52px Georgia,serif'; x.fillText(pass ? 'Above the 60% pass line' : 'Can you beat this score?', 80, 530);
+  x.fillStyle = '#6b675e'; x.font = '40px system-ui,sans-serif';
+  ['15 questions in Greek, with English', 'and Russian translations.', 'Next exam: Saturday 21 November 2026'].forEach((l,i)=>x.fillText(l, 80, 650 + i*60));
+  x.fillStyle = '#1d5f8a'; x.font = 'bold 44px system-ui,sans-serif'; x.fillText('cyprus-exam-prep.github.io', 80, 960);
+  document.getElementById('card').src = c.toDataURL('image/png');
+  const link = 'https://cyprus-exam-prep.github.io/?utm_source=share&s=' + score;
+  const msg = 'I got ' + score + '/' + n + ' on the free Cyprus citizenship exam practice test. Can you beat me? ' + link;
+  document.getElementById('sh-wa').href = 'https://wa.me/?text=' + encodeURIComponent(msg);
+  document.getElementById('sh-vb').href = 'viber://forward?text=' + encodeURIComponent(msg);
+  document.getElementById('sh-tg').href = 'https://t.me/share/url?url=' + encodeURIComponent(link) + '&text=' + encodeURIComponent('I got ' + score + '/' + n + ' on the free Cyprus citizenship exam practice test. Can you beat me?');
+  document.getElementById('sh-fb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(link);
+  document.getElementById('sh-copy').onclick = () => { navigator.clipboard && navigator.clipboard.writeText(msg).then(()=>{document.getElementById('sh-copy').textContent='Copied';}); };
+  const nb = document.getElementById('sh-native');
+  nb.onclick = () => c.toBlob(b => {
+    const f = new File([b], 'cyprus-exam-score.png', {type:'image/png'});
+    if (navigator.canShare && navigator.canShare({files:[f]})) navigator.share({files:[f], text: msg}).catch(()=>{});
+    else if (navigator.share) navigator.share({text: msg, url: link}).catch(()=>{});
+    else { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'cyprus-exam-score.png'; a.click(); }
+  });
+  const d = document.getElementById('done'); d.style.display = 'block';
+  d.scrollIntoView({behavior:'smooth', block:'start'});
+}
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2d2b837cc6e74b8fa18a1feb42b4cfab"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
