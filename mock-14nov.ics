@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CyprusExamPrep//Dress rehearsal 14 Nov 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mock-14nov-2026@cyprus-exam-prep.github.io
+DTSTAMP:20261104T090000Z
+DTSTART:20261114T080000Z
+DTEND:20261114T090000Z
+SUMMARY:Dress rehearsal: free timed Cyprus exam mock
+DESCRIPTION:25 new exam-style questions in Greek with English/Russian trans
+ lation. 45 minutes\, pass mark 60% (15/25). Opens at 10:00 Cyprus time.\n\
+ nOpen: https://cyprus-exam-prep.github.io/mock-14nov.html?utm_source=ics\n
+ Start signal on Telegram: https://t.me/cyprusexamprep\n\nIndependent proje
+ ct\, not affiliated with the Ministry.
+LOCATION:https://cyprus-exam-prep.github.io/mock-14nov.html?utm_source=ics
+URL:https://cyprus-exam-prep.github.io/mock-14nov.html?utm_source=ics
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cyprus exam dress rehearsal starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

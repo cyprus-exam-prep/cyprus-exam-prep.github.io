@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Εξετάσεις Πολιτικής και Κοινωνικής Πραγματικότητας της Κύπρου 2026–2027: ημερομηνίες, τέλος, ύλη</title>
 <link rel="canonical" href="https://cyprus-exam-prep.github.io/exam-guide-el.html">
+<link rel="alternate" hreflang="en" href="https://cyprus-exam-prep.github.io/exam-guide.html">
+<link rel="alternate" hreflang="el" href="https://cyprus-exam-prep.github.io/exam-guide-el.html">
+<link rel="alternate" hreflang="ru" href="https://cyprus-exam-prep.github.io/exam-guide-ru.html">
+<link rel="alternate" hreflang="x-default" href="https://cyprus-exam-prep.github.io/exam-guide.html">
 <meta name="description" content="Εξετάσεις για πολιτογράφηση στην Κύπρο: 25 ερωτήσεις πολλαπλής επιλογής, 45 λεπτά, βάση 60%, τέλος €20. Ημερομηνίες 2026–2027 και προετοιμασία.">
 <meta property="og:title" content="Εξετάσεις Πολιτικής και Κοινωνικής Πραγματικότητας της Κύπρου 2026–2027: ημερομηνίες, τέλος, ύλη">
 <meta property="og:description" content="Εξετάσεις για πολιτογράφηση στην Κύπρο: 25 ερωτήσεις πολλαπλής επιλογής, 45 λεπτά, βάση 60%, τέλος €20. Ημερομηνίες 2026–2027 και προετοιμασία.">
@@ -55,11 +59,52 @@ details summary{cursor:pointer;color:var(--accent);margin-top:8px}
 .toc{columns:2;padding-left:20px}@media(max-width:560px){.toc{columns:1}}
 table.facts-t{border-collapse:collapse;width:100%}table.facts-t td{border-bottom:1px solid var(--line);padding:8px 6px;vertical-align:top}
 table.facts-t td:first-child{color:var(--muted);width:40%}
+
+/* --- added: sitting switch, offers, weak topics, calendar, footer --- */
+html[data-sitting="mar"] .v-nov,html:not([data-sitting="mar"]) .v-mar,html[data-founding="off"] .founding-only,html[data-march27="off"] .march27-only,html:not([data-march27="off"]) .m27-off,html[data-past="1"] .sitting,html[data-past="1"] .pre-cut{display:none!important}
+html:not([data-sitting="mar"]):not([data-founding="off"]) .nf{display:none}
+.sitting{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 18px}
+.sitting .lbl{font-size:.85rem;color:var(--muted);flex-basis:100%}
+.sitting button{font:inherit;font-size:.9rem;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;text-align:left}
+.sitting button:hover{border-color:var(--accent)}
+.sitting button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.mar-panel{background:var(--panel);border:1px solid var(--accent);border-radius:10px;padding:14px 16px;margin:0 0 20px}
+.mar-panel p{margin:0 0 8px}
+.mar-panel a,.offer a,.weak a,.cal a,.ask a,.group a,.groups a,.promise a{color:var(--accent)}
+a.btn{display:inline-block;background:var(--accent);color:var(--bg)!important;text-decoration:none;border-radius:8px;padding:10px 16px;font-weight:600;line-height:1.3}
+a.btn:hover{filter:brightness(1.1)}
+a.btn-sm{display:inline-block;margin-top:6px;border:1px solid var(--accent);border-radius:999px;padding:5px 12px;font-size:.88rem;text-decoration:none}
+.trust{font-size:.78rem;color:var(--muted);margin:8px 0 0}
+.ask,.group,.groups,.promise{font-size:.9rem;margin:8px 0 0}
+.small{font-size:.85rem;color:var(--muted)}
+.band{font-weight:600;margin:0 0 4px}
+.band a,#done .kit a{color:var(--accent)}
+#done #card{max-width:min(100%,420px)}
+#done h3,.cal h3,.weak h3,.offer h3{font-family:Georgia,serif;font-weight:400;font-size:1.1rem;margin:0 0 8px}
+.weak,.offer,.cal,.shareblk{border-top:1px solid var(--line);padding-top:14px;margin-top:16px}
+.weak ul,.cal ul{list-style:none;margin:0;padding:0}
+.weak li{padding:10px 0;border-bottom:1px dashed var(--line)}
+.weak li:last-child{border-bottom:0}
+.weak .grn{color:var(--muted);font-size:.9rem}
+.cal li{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line)}
+.cal li:last-child{border-bottom:0}
+.calbtns{display:flex;gap:12px;flex-wrap:wrap}
+.prose .cal{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0}
+.sitefoot{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;margin:20px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.sitefoot a{color:var(--accent)}
 </style>
+<script>
+(function(){var d=document.documentElement,t="";try{var p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Nicosia",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date()),o={};p.forEach(function(x){o[x.type]=x.value});t=o.year+"-"+o.month+"-"+o.day}catch(e){t=new Date(Date.now()+72e5).toISOString().slice(0,10)}
+var past=t>="2026-11-22",m27=t<="2027-01-18",s=null;if(!past){try{s=window.localStorage.getItem("cep-sitting")}catch(e){}}
+d.setAttribute("data-sitting",past||s==="mar"?"mar":"nov");d.setAttribute("data-founding",past?"off":"on");d.setAttribute("data-march27",m27?"on":"off");if(past)d.setAttribute("data-past","1");
+window.CEP={today:t,past:past,m27:m27,hooks:[]};})();
+</script>
 </head>
 <body>
 <main>
-<nav class="top"><a href="./">Free practice test</a><a href="exam-guide.html">Exam guide</a><a href="exam-guide-el.html">Οδηγός (ελληνικά)</a><a href="exam-guide-ru.html">Гид (русский)</a><a href="topics.html">The 14 topics</a><a href="greek-trap-words.html">Greek trap words</a><a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack">Πλήρες πακέτο €12</a></nav>
+<nav class="top"><a href="./">Free practice test</a><a href="exam-guide.html">Exam guide</a><a href="exam-guide-el.html">Οδηγός (ελληνικά)</a><a href="exam-guide-ru.html">Гид (русский)</a><a href="topics.html">The 14 topics</a><a href="greek-trap-words.html">Greek trap words</a><a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack?utm_source=nav-pack" data-f="click-pack">Πλήρες πακέτο €12</a></nav>
+<div class="sitting" role="group" aria-labelledby="sitlbl"><span class="lbl" id="sitlbl">Πότε δίνετε εξετάσεις;</span><button type="button" data-sit="nov" aria-pressed="true">Δίνω στις 21 Νοεμβρίου</button><button type="button" data-sit="mar" aria-pressed="false">6 Μαρτίου 2027 / δεν έκανα ακόμη αίτηση</button></div>
+<div class="mar-panel v-mar"><p><strong>Δίνετε στις 6 Μαρτίου 2027;</strong> Οι αιτήσεις υποβάλλονται 11–18 Ιανουαρίου 2027 (τέλος €20 μέσω JCC Smart). <a href="#cal">Προσθέστε τις ημερομηνίες στο ημερολόγιο</a></p><p>Αγοράστε τώρα, η ενημέρωση για τον Μάρτιο σας έρχεται δωρεάν.<span class="march27-only"> 35% έκπτωση με τον κωδικό MARCH27 έως τις 18 Ιανουαρίου 2027.</span></p><p><a class="btn march27-only" href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/MARCH27?utm_source=march" data-f="click-march27">Αγορά με MARCH27 — €7,80</a><a class="btn m27-off" href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack?utm_source=march" data-f="click-pack">Πλήρες πακέτο — €12 με ΦΠΑ</a></p><p class="trust">Φτιαγμένο στην Κύπρο · από την επίσημη ύλη · Who's who: έλεγχος 31 Οκτ 2026 · επιστροφή χρημάτων 30 ημερών · ασφαλής πληρωμή μέσω Gumroad</p></div>
 <h1>Εξετάσεις «Βασικά Στοιχεία της Σύγχρονης Πολιτικής και Κοινωνικής Πραγματικότητας της Κύπρου» 2026–2027</h1>
 <p class="lead">Ημερομηνίες, τέλος, μορφή και προετοιμασία για την εξέταση που απαιτείται για την πολιτογράφηση και τη μακρόχρονη διαμονή. Έλεγχος στις 31 Οκτωβρίου 2026 με βάση την <a href='https://enimerosi.moec.gov.cy/archeia/1/ypp19510a'>ανακοίνωση και ύλη του Υπουργείου Παιδείας</a>.</p>
 <table class="facts-t">
@@ -73,6 +118,7 @@ table.facts-t td:first-child{color:var(--muted);width:40%}
 <h2>Ημερομηνίες εξετάσεων</h2>
 <ul><li><strong>Σάββατο 21 Νοεμβρίου 2026</strong> — οι αιτήσεις έχουν κλείσει</li><li><strong>Σάββατο 6 Μαρτίου 2027</strong> — αιτήσεις 11–18 Ιανουαρίου 2027</li><li><strong>Σάββατο 3 Ιουλίου 2027</strong> — αιτήσεις 17–24 Μαΐου 2027</li><li><strong>Σάββατο 20 Νοεμβρίου 2027</strong> — αιτήσεις 4–11 Οκτωβρίου 2027</li></ul>
 <p>Επιβεβαιώστε πάντα τις ημερομηνίες στην <a href='https://enimerosi.moec.gov.cy/archeia/1/ypp19510a'>ανακοίνωση και ύλη του Υπουργείου Παιδείας</a> πριν κάνετε αίτηση.</p>
+<div class="cal" id="cal"><h3>Προσθήκη στο ημερολόγιό μου</h3><ul><li class="pre-cut"><span>Εξετάσεις: Σάββατο 21 Νοεμβρίου 2026</span> <span class="calbtns"><a href="cal-exam-21nov-el.ics" download data-f="click-calendar-ics">.ics (iPhone, Outlook)</a> <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%CE%95%CE%BE%CE%B5%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%C2%AB%CE%92%CE%B1%CF%83%CE%B9%CE%BA%CE%AC%20%CE%A3%CF%84%CE%BF%CE%B9%CF%87%CE%B5%CE%AF%CE%B1%20%CF%84%CE%B7%CF%82%20%CE%A3%CF%8D%CE%B3%CF%87%CF%81%CE%BF%CE%BD%CE%B7%CF%82%20%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82%20%CE%BA%CE%B1%CE%B9%20%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82%20%CE%A0%CF%81%CE%B1%CE%B3%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8C%CF%84%CE%B7%CF%84%CE%B1%CF%82%20%CF%84%CE%B7%CF%82%20%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%85%C2%BB%20%E2%80%93%20%CE%A3%CE%AC%CE%B2%CE%B2%CE%B1%CF%84%CE%BF%2021%20%CE%9D%CE%BF%CE%B5%CE%BC%CE%B2%CF%81%CE%AF%CE%BF%CF%85%202026&amp;dates=20261121%2F20261122&amp;details=25%20%CE%B5%CF%81%CF%89%CF%84%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CF%80%CE%BF%CE%BB%CE%BB%CE%B1%CF%80%CE%BB%CE%AE%CF%82%20%CE%B5%CF%80%CE%B9%CE%BB%CE%BF%CE%B3%CE%AE%CF%82%20%CF%83%CF%84%CE%B1%20%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC%2C%2045%20%CE%BB%CE%B5%CF%80%CF%84%CE%AC%2C%20%CE%B2%CE%AC%CF%83%CE%B7%20%CE%B5%CF%80%CE%B9%CF%84%CF%85%CF%87%CE%AF%CE%B1%CF%82%2060%25%20%2815%2F25%29.%0A%CE%9C%CE%B1%CE%B6%CE%AF%20%CF%83%CE%B1%CF%82%3A%20%CF%84%CE%B1%CF%85%CF%84%CF%8C%CF%84%CE%B7%CF%84%CE%B1%2C%20%CE%B4%CE%B9%CE%B1%CE%B2%CE%B1%CF%84%CE%AE%CF%81%CE%B9%CE%BF%20%CE%AE%20ARC%20%CE%BA%CE%B1%CE%B9%20%CF%84%CE%BF%20%CE%B4%CE%B5%CE%BB%CF%84%CE%AF%CE%BF%20%CF%85%CF%80%CE%BF%CF%88%CE%B7%CF%86%CE%AF%CE%BF%CF%85.%20%CE%94%CE%B5%CE%BD%20%CE%B5%CF%80%CE%B9%CF%84%CF%81%CE%AD%CF%80%CE%BF%CE%BD%CF%84%CE%B1%CE%B9%20%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CE%AC%2C%20%CE%AD%CE%BE%CF%85%CF%80%CE%BD%CE%B1%20%CF%81%CE%BF%CE%BB%CF%8C%CE%B3%CE%B9%CE%B1%2C%20%CF%83%CE%B7%CE%BC%CE%B5%CE%B9%CF%8E%CF%83%CE%B5%CE%B9%CF%82%20%CE%AE%20%CE%BB%CE%B5%CE%BE%CE%B9%CE%BA%CE%AC.%0A%CE%95%CF%80%CE%B9%CE%B2%CE%B5%CE%B2%CE%B1%CE%B9%CF%8E%CF%83%CF%84%CE%B5%20%CF%84%CE%B9%CF%82%20%CE%BB%CE%B5%CF%80%CF%84%CE%BF%CE%BC%CE%AD%CF%81%CE%B5%CE%B9%CE%B5%CF%82%20%CF%83%CF%84%CE%B7%CE%BD%20%CE%B1%CE%BD%CE%B1%CE%BA%CE%BF%CE%AF%CE%BD%CF%89%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF%CF%85%20%CE%A0%CE%B1%CE%B9%CE%B4%CE%B5%CE%AF%CE%B1%CF%82%3A%20https%3A%2F%2Fenimerosi.moec.gov.cy%2Farcheia%2F1%2Fypp19510a%0A%CE%95%CE%BE%CE%AC%CF%83%CE%BA%CE%B7%CF%83%CE%B7%3A%20https%3A%2F%2Fcyprus-exam-prep.github.io%2F%3Futm_source%3Dcalendar&amp;ctz=Asia%2FNicosia" target="_blank" rel="noopener" data-f="click-calendar-google">Google Calendar</a></span></li><li class=""><span>Αιτήσεις για 6 Μαρτίου: 11–18 Ιανουαρίου 2027</span> <span class="calbtns"><a href="cal-apply-6mar-el.ics" download data-f="click-calendar-ics">.ics (iPhone, Outlook)</a> <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%CE%91%CE%AF%CF%84%CE%B7%CF%83%CE%B7%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B9%CF%82%20%CE%B5%CE%BE%CE%B5%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%CF%84%CE%B7%CF%82%206%CE%B7%CF%82%20%CE%9C%CE%B1%CF%81%CF%84%CE%AF%CE%BF%CF%85%202027%20%2811%E2%80%9318%20%CE%99%CE%B1%CE%BD%CE%BF%CF%85%CE%B1%CF%81%CE%AF%CE%BF%CF%85%29&amp;dates=20270111%2F20270119&amp;details=%CE%9F%CE%B9%20%CE%B1%CE%B9%CF%84%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B9%CF%82%20%CE%B5%CE%BE%CE%B5%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%CF%84%CE%B7%CF%82%206%CE%B7%CF%82%20%CE%9C%CE%B1%CF%81%CF%84%CE%AF%CE%BF%CF%85%202027%20%CF%85%CF%80%CE%BF%CE%B2%CE%AC%CE%BB%CE%BB%CE%BF%CE%BD%CF%84%CE%B1%CE%B9%2011%E2%80%9318%20%CE%99%CE%B1%CE%BD%CE%BF%CF%85%CE%B1%CF%81%CE%AF%CE%BF%CF%85%202027.%0A%CE%A4%CE%AD%CE%BB%CE%BF%CF%82%20%E2%82%AC20%2C%20%CF%80%CE%BB%CE%B7%CF%81%CF%8E%CE%BD%CE%B5%CF%84%CE%B1%CE%B9%20%CE%BC%CE%AD%CF%83%CF%89%20JCC%20Smart%20%CE%BC%CE%B5%20%CF%84%CE%B7%CE%BD%20%CE%B1%CE%AF%CF%84%CE%B7%CF%83%CE%B7.%0A%CE%95%CF%80%CE%B9%CE%B2%CE%B5%CE%B2%CE%B1%CE%B9%CF%8E%CF%83%CF%84%CE%B5%20%CF%84%CE%B9%CF%82%20%CE%BB%CE%B5%CF%80%CF%84%CE%BF%CE%BC%CE%AD%CF%81%CE%B5%CE%B9%CE%B5%CF%82%20%CF%83%CF%84%CE%B7%CE%BD%20%CE%B1%CE%BD%CE%B1%CE%BA%CE%BF%CE%AF%CE%BD%CF%89%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF%CF%85%20%CE%A0%CE%B1%CE%B9%CE%B4%CE%B5%CE%AF%CE%B1%CF%82%3A%20https%3A%2F%2Fenimerosi.moec.gov.cy%2Farcheia%2F1%2Fypp19510a%0A%CE%9F%CE%B4%CE%B7%CE%B3%CF%8C%CF%82%3A%20https%3A%2F%2Fcyprus-exam-prep.github.io%2Fexam-guide-el.html%3Futm_source%3Dcalendar&amp;ctz=Asia%2FNicosia" target="_blank" rel="noopener" data-f="click-calendar-google">Google Calendar</a></span></li><li class=""><span>Εξετάσεις: Σάββατο 6 Μαρτίου 2027</span> <span class="calbtns"><a href="cal-exam-6mar-el.ics" download data-f="click-calendar-ics">.ics (iPhone, Outlook)</a> <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%CE%95%CE%BE%CE%B5%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20%C2%AB%CE%92%CE%B1%CF%83%CE%B9%CE%BA%CE%AC%20%CE%A3%CF%84%CE%BF%CE%B9%CF%87%CE%B5%CE%AF%CE%B1%20%CF%84%CE%B7%CF%82%20%CE%A3%CF%8D%CE%B3%CF%87%CF%81%CE%BF%CE%BD%CE%B7%CF%82%20%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82%20%CE%BA%CE%B1%CE%B9%20%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82%20%CE%A0%CF%81%CE%B1%CE%B3%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8C%CF%84%CE%B7%CF%84%CE%B1%CF%82%20%CF%84%CE%B7%CF%82%20%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%85%C2%BB%20%E2%80%93%20%CE%A3%CE%AC%CE%B2%CE%B2%CE%B1%CF%84%CE%BF%206%20%CE%9C%CE%B1%CF%81%CF%84%CE%AF%CE%BF%CF%85%202027&amp;dates=20270306%2F20270307&amp;details=25%20%CE%B5%CF%81%CF%89%CF%84%CE%AE%CF%83%CE%B5%CE%B9%CF%82%20%CF%80%CE%BF%CE%BB%CE%BB%CE%B1%CF%80%CE%BB%CE%AE%CF%82%20%CE%B5%CF%80%CE%B9%CE%BB%CE%BF%CE%B3%CE%AE%CF%82%20%CF%83%CF%84%CE%B1%20%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC%2C%2045%20%CE%BB%CE%B5%CF%80%CF%84%CE%AC%2C%20%CE%B2%CE%AC%CF%83%CE%B7%20%CE%B5%CF%80%CE%B9%CF%84%CF%85%CF%87%CE%AF%CE%B1%CF%82%2060%25%20%2815%2F25%29.%0A%CE%9C%CE%B1%CE%B6%CE%AF%20%CF%83%CE%B1%CF%82%3A%20%CF%84%CE%B1%CF%85%CF%84%CF%8C%CF%84%CE%B7%CF%84%CE%B1%2C%20%CE%B4%CE%B9%CE%B1%CE%B2%CE%B1%CF%84%CE%AE%CF%81%CE%B9%CE%BF%20%CE%AE%20ARC%20%CE%BA%CE%B1%CE%B9%20%CF%84%CE%BF%20%CE%B4%CE%B5%CE%BB%CF%84%CE%AF%CE%BF%20%CF%85%CF%80%CE%BF%CF%88%CE%B7%CF%86%CE%AF%CE%BF%CF%85.%20%CE%94%CE%B5%CE%BD%20%CE%B5%CF%80%CE%B9%CF%84%CF%81%CE%AD%CF%80%CE%BF%CE%BD%CF%84%CE%B1%CE%B9%20%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CE%AC%2C%20%CE%AD%CE%BE%CF%85%CF%80%CE%BD%CE%B1%20%CF%81%CE%BF%CE%BB%CF%8C%CE%B3%CE%B9%CE%B1%2C%20%CF%83%CE%B7%CE%BC%CE%B5%CE%B9%CF%8E%CF%83%CE%B5%CE%B9%CF%82%20%CE%AE%20%CE%BB%CE%B5%CE%BE%CE%B9%CE%BA%CE%AC.%0A%CE%95%CF%80%CE%B9%CE%B2%CE%B5%CE%B2%CE%B1%CE%B9%CF%8E%CF%83%CF%84%CE%B5%20%CF%84%CE%B9%CF%82%20%CE%BB%CE%B5%CF%80%CF%84%CE%BF%CE%BC%CE%AD%CF%81%CE%B5%CE%B9%CE%B5%CF%82%20%CF%83%CF%84%CE%B7%CE%BD%20%CE%B1%CE%BD%CE%B1%CE%BA%CE%BF%CE%AF%CE%BD%CF%89%CF%83%CE%B7%20%CF%84%CE%BF%CF%85%20%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF%CF%85%20%CE%A0%CE%B1%CE%B9%CE%B4%CE%B5%CE%AF%CE%B1%CF%82%3A%20https%3A%2F%2Fenimerosi.moec.gov.cy%2Farcheia%2F1%2Fypp19510a%0A%CE%95%CE%BE%CE%AC%CF%83%CE%BA%CE%B7%CF%83%CE%B7%3A%20https%3A%2F%2Fcyprus-exam-prep.github.io%2F%3Futm_source%3Dcalendar&amp;ctz=Asia%2FNicosia" target="_blank" rel="noopener" data-f="click-calendar-google">Google Calendar</a></span></li></ul><p class="small">Υπενθυμίσεις: 7 ημέρες και 1 ημέρα πριν από τις 21/11· στις 10/1 για τις αιτήσεις· 14 ημέρες πριν από τις 6/3.</p></div>
 <h2>Η ύλη</h2>
 <p>Οι ερωτήσεις προέρχονται από <a href="topics.html">14 θεματικές ενότητες</a>: Επικαιρότητα, Σύγχρονη ιστορία, Ήθη και έθιμα, Γεωγραφία, Πολίτευμα και κόμματα, Οικονομία, Προϋποθέσεις εισόδου, Τηλεπικοινωνίες, Καιρός και κλίμα, Γλώσσες και θρησκείες, Νόμισμα, Αργίες και ωράρια, Υγεία και ασφάλεια, Μέσα μεταφοράς.</p>
 <h2>Πώς να προετοιμαστείτε</h2>
@@ -84,9 +130,51 @@ table.facts-t td:first-child{color:var(--muted);width:40%}
 <li>Την τελευταία εβδομάδα ελέγξτε ξανά υπουργούς και αρχηγούς κομμάτων.</li>
 </ol>
 </div>
-<section class='cta'><h2>Εξασκηθείτε τώρα</h2><p>Κάντε το <a href='./'>δωρεάν τεστ 15 ερωτήσεων</a> (στα ελληνικά, με μετάφραση στα αγγλικά και ρωσικά, κάθε απάντηση με πηγή). Για πλήρη προετοιμασία, το <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack'>Cyprus Culture Exam Pack (€12 με ΦΠΑ)</a> περιέχει 2 πλήρη διαγωνίσματα με χρόνο, 99 ερωτήσεις με τεκμηριωμένες απαντήσεις, και τις 14 θεματικές ενότητες και γλωσσάρι ελληνικά–αγγλικά–ρωσικά. Μία δωρεάν ερώτηση κάθε μέρα στο <a href='https://t.me/cyprusexamprep'>Telegram</a>.</p><p class='founding'><strong>Προσφορά έναρξης:</strong> οι πρώτοι 20 αγοραστές πληρώνουν €6 αντί για €12 με τον κωδικό FOUNDING20, έως τις 21 Νοεμβρίου. <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/FOUNDING20'>Αγορά με €6</a></p></section>
+<section class='cta'><h2>Εξασκηθείτε τώρα</h2><p>Κάντε το <a href='./'>δωρεάν τεστ 15 ερωτήσεων</a> (στα ελληνικά, με μετάφραση στα αγγλικά και ρωσικά, κάθε απάντηση με πηγή). Για πλήρη προετοιμασία, το <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack?utm_source=guide-el' data-f='click-pack'>Cyprus Culture Exam Pack (€12 με ΦΠΑ)</a> περιέχει 2 πλήρη διαγωνίσματα με χρόνο, 99 ερωτήσεις με τεκμηριωμένες απαντήσεις, και τις 14 θεματικές ενότητες και γλωσσάρι ελληνικά–αγγλικά–ρωσικά. Μία δωρεάν ερώτηση κάθε μέρα στο <a href='https://t.me/cyprusexamprep'>Telegram</a>.</p><p class='founding v-nov founding-only'><strong>Προσφορά έναρξης:</strong> οι πρώτοι 20 αγοραστές πληρώνουν €6 αντί για €12 με τον κωδικό FOUNDING20, έως τις 21 Νοεμβρίου. <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/FOUNDING20?utm_source=guide-el-founding' data-f='click-founding20'>Αγορά με €6</a></p><p class='v-mar march27-only'><strong>Δίνετε στις 6 Μαρτίου;</strong> 35% έκπτωση με τον κωδικό MARCH27 έως τις 18 Ιανουαρίου 2027, και η ενημέρωση για τον Μάρτιο σας έρχεται δωρεάν. <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/MARCH27?utm_source=march' data-f='click-march27'>Αγορά με €7,80</a></p>
+<p class="promise v-nov">Δεν περάσατε στις 21 Νοεμβρίου; Στείλτε μας email και πάρτε δωρεάν την έκδοση για τις 6 Μαρτίου 2027 — ή πλήρη επιστροφή χρημάτων, αν προτιμάτε, έως τις 31 Μαρτίου 2027. <a href="mailto:cyprusexamprep@gmail.com?subject=%CE%91%CF%80%CE%BF%CF%84%CE%AD%CE%BB%CE%B5%CF%83%CE%BC%CE%B1%2021/11%3A%20%CE%B4%CF%89%CF%81%CE%B5%CE%AC%CE%BD%20%CE%AD%CE%BA%CE%B4%CE%BF%CF%83%CE%B7%20%CE%9C%CE%B1%CF%81%CF%84%CE%AF%CE%BF%CF%85%20%CE%AE%20%CE%B5%CF%80%CE%B9%CF%83%CF%84%CF%81%CE%BF%CF%86%CE%AE">cyprusexamprep@gmail.com</a></p>
+<p class="group">Διαβάζετε με τον/τη σύντροφό σας ή με την τάξη σας; <a class="v-nov founding-only" href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/FOUNDING20?utm_source=guide-el-group" data-f="click-founding20">3 άτομα με €24</a><a class="nf" href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack?utm_source=guide-el-group" data-f="click-pack">3 άτομα με €24</a><span class="v-nov founding-only"> (€12 με FOUNDING20 έως τις 21 Νοεμβρίου)</span></p>
+<p class="trust">Φτιαγμένο στην Κύπρο · από την επίσημη ύλη · Who's who: έλεγχος 31 Οκτ 2026 · επιστροφή χρημάτων 30 ημερών · ασφαλής πληρωμή μέσω Gumroad</p>
+<p class="ask">Ρωτήστε μας πριν αγοράσετε: <a href="mailto:cyprusexamprep@gmail.com?subject=%CE%95%CF%81%CF%8E%CF%84%CE%B7%CF%83%CE%B7%20%CF%80%CF%81%CE%B9%CE%BD%20%CE%B1%CF%80%CF%8C%20%CF%84%CE%B7%CE%BD%20%CE%B1%CE%B3%CE%BF%CF%81%CE%AC%20%CF%84%CE%BF%CF%85%20%CF%80%CE%B1%CE%BA%CE%AD%CF%84%CE%BF%CF%85">email</a> ή <a href="https://t.me/cyprusexamprep">Telegram</a>. Απαντάμε μέσα σε 24 ώρες στα ελληνικά, αγγλικά ή ρωσικά.</p>
+<p class="groups">Μαζί με όσους δίνουν εξετάσεις στις <span class="v-nov">21 Νοεμβρίου</span><span class="v-mar">6 Μαρτίου</span>: <a href="https://www.facebook.com/groups/29466740929578859" target="_blank" rel="noopener">ομάδα μελέτης στο Facebook</a> · <a href="https://t.me/cyprusexam21nov" target="_blank" rel="noopener">συζήτηση στο Telegram</a></p></section>
 <p class="foot">Independent study aid by CyprusExamPrep. Not affiliated with or endorsed by the Ministry of Education, Sport and Youth or any government body. No pass is guaranteed. Checked 31 October 2026.</p>
+<nav class="sitefoot" aria-label="Περισσότερες σελίδες"><a href="about.html">Ποιοι είμαστε</a><a href="whos-who.html">Ποιος είναι ποιος</a><a href="exam-facts.html">Στοιχεία εξέτασης</a><a href="resources.html">Δωρεάν υλικό</a><a href="syllabus.html">Ύλη</a><a href="embed.html">Ενσωμάτωση τεστ</a><a href="ru/" lang="ru">Тест на русском</a><a href="ar.html" lang="ar" dir="rtl">العربية</a><a href="mock-14nov.html">Διαγώνισμα 14 Νοεμβρίου</a></nav>
 </main>
+<script>
+/* Sitting switch (#46) + funnel virtual page views (#41). */
+(function(){
+var d=document.documentElement,CEP=window.CEP||{hooks:[]};
+function sync(){var v=d.getAttribute("data-sitting");document.querySelectorAll("[data-sit]").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-sit")===v?"true":"false")})}
+document.querySelectorAll("[data-sit]").forEach(function(b){b.addEventListener("click",function(){var v=b.getAttribute("data-sit");d.setAttribute("data-sitting",v);try{window.localStorage.setItem("cep-sitting",v)}catch(e){}sync();(CEP.hooks||[]).forEach(function(f){try{f(v)}catch(e){}})})});
+sync();
+/* Each funnel step is pushed once as a virtual path (/f/<name>) so Cloudflare Web Analytics
+   records it, then we step straight back so the visitor's Back button is unchanged. */
+var fired={},queue=[],busy=false,idle=[];
+function flush(){if(busy||queue.length)return;var a=idle;idle=[];a.forEach(function(f){f()})}
+function pump(){
+  if(busy)return;if(!queue.length){flush();return}
+  var name=queue.shift(),real=location.pathname,tail=location.search+location.hash,vpath="/f/"+name;
+  if(real.indexOf("/f/")===0){queue=[];flush();return}
+  var sr=null;try{sr=history.scrollRestoration;history.scrollRestoration="manual"}catch(e){}
+  try{history.pushState({cepvp:1},"",vpath+tail)}catch(e){}
+  if(location.pathname!==vpath){try{if(sr)history.scrollRestoration=sr}catch(e){}pump();return}
+  busy=true;var done=false;
+  function fin(){if(done)return;done=true;clearTimeout(tm);window.removeEventListener("popstate",fin);
+    if(location.pathname===vpath){try{history.replaceState(null,"",real+tail)}catch(e){}}
+    try{if(sr)history.scrollRestoration=sr}catch(e){}busy=false;pump()}
+  window.addEventListener("popstate",fin);var tm=setTimeout(fin,1200);history.back();
+}
+function vp(name){if(!name||fired[name])return false;fired[name]=1;queue.push(name);pump();return true}
+function whenIdle(f){if(!busy&&!queue.length){f();return}idle.push(f);setTimeout(function(){var i=idle.indexOf(f);if(i>=0){idle.splice(i,1);f()}},1500)}
+CEP.vp=vp;CEP.fired=fired;window.CEP=CEP;
+document.addEventListener("click",function(e){
+  var a=e.target.closest&&e.target.closest("[data-f]");if(!a)return;
+  var n=a.getAttribute("data-f");if(fired[n])return;
+  var sameTab=a.tagName==="A"&&/^https?:/i.test(a.href||"")&&!a.target&&!a.hasAttribute("download")&&!(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)&&e.button===0;
+  vp(n);
+  if(sameTab&&busy){e.preventDefault();var href=a.href;whenIdle(function(){location.href=href})}
+});
+})();
+</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2d2b837cc6e74b8fa18a1feb42b4cfab"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

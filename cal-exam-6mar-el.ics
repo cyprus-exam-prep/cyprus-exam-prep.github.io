@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CyprusExamPrep//Exam dates//EL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cal-exam-6mar-el@cyprus-exam-prep.github.io
+DTSTAMP:20261104T080000Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Εξετάσεις «Βασικά Στοιχεία της Σύγχ
+ ρονης Πολιτικής και Κοινωνικής Πραγματι
+ κότητας της Κύπρου» – Σάββατο 6 Μαρτίου 2
+ 027
+DESCRIPTION:25 ερωτήσεις πολλαπλής επιλογής στ
+ α ελληνικά\, 45 λεπτά\, βάση επιτυχίας 60% (15/
+ 25).\nΜαζί σας: ταυτότητα\, διαβατήριο ή ARC κ
+ αι το δελτίο υποψηφίου. Δεν επιτρέπονται
+  κινητά\, έξυπνα ρολόγια\, σημειώσεις ή λε
+ ξικά.\nΕπιβεβαιώστε τις λεπτομέρειες στη
+ ν ανακοίνωση του Υπουργείου Παιδείας: http
+ s://enimerosi.moec.gov.cy/archeia/1/ypp19510a\nΕξάσκηση: https://c
+ yprus-exam-prep.github.io/?utm_source=calendar
+URL:https://enimerosi.moec.gov.cy/archeia/1/ypp19510a
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Υπενθύμιση: Εξετάσεις «Βασικά Στο
+ ιχεία της Σύγχρονης Πολιτικής και Κοινω
+ νικής Πραγματικότητας της Κύπρου» – Σάβ
+ βατο 6 Μαρτίου 2027
+TRIGGER:-P13DT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

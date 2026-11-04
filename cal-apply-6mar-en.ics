@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CyprusExamPrep//Exam dates//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cal-apply-6mar-en@cyprus-exam-prep.github.io
+DTSTAMP:20261104T080000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270119
+SUMMARY:Apply for the 6 Mar 2027 Cyprus citizenship exam (11–18 Jan)
+DESCRIPTION:Applications for the 6 March 2027 exam are open 11–18 January
+  2027.\nFee €20\, paid via JCC Smart when you apply.\nConfirm the detail
+ s in the Ministry of Education announcement: https://enimerosi.moec.gov.cy
+ /archeia/1/ypp19510a\nExam guide: https://cyprus-exam-prep.github.io/exam-
+ guide.html?utm_source=calendar
+URL:https://enimerosi.moec.gov.cy/archeia/1/ypp19510a
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Apply for the 6 Mar 2027 Cyprus citizenship exam (11
+ –18 Jan)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

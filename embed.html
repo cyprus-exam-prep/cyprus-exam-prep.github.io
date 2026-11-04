@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Cyprus exam question-of-the-day widget for your website</title>
+<link rel="canonical" href="https://cyprus-exam-prep.github.io/embed.html">
+<meta name="description" content="Add a free daily practice question for the Cyprus citizenship and long-term residence exam to your website. Greek with English or Russian, sourced answers, no cookies. Copy-paste in 1 minute.">
+<meta property="og:title" content="Free Cyprus exam question-of-the-day widget">
+<meta property="og:description" content="A daily Greek practice question with English or Russian translation and a sourced answer. No cookies. Copy, paste, done.">
+<meta property="og:url" content="https://cyprus-exam-prep.github.io/embed.html">
+<meta property="og:image" content="https://cyprus-exam-prep.github.io/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--bg:#faf8f3;--panel:#fff;--fg:#1f1e1b;--muted:#6b675e;--line:#e3ded2;--accent:#1d5f8a;--ok:#2f7a3d;--bad:#b23a2e;--okbg:#e9f4ea;--badbg:#fbecea}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171614;--panel:#211f1c;--fg:#ece8df;--muted:#a39e93;--line:#38342e;--accent:#7cb7e0;--ok:#7ccf8a;--bad:#f08a7e;--okbg:#1f2e21;--badbg:#3a2220}}
+:root[data-theme="dark"]{--bg:#171614;--panel:#211f1c;--fg:#ece8df;--muted:#a39e93;--line:#38342e;--accent:#7cb7e0;--ok:#7ccf8a;--bad:#f08a7e;--okbg:#1f2e21;--badbg:#3a2220}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:1.9rem;line-height:1.2;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 20px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;padding:0;list-style:none}
+.facts li{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem;color:var(--muted);background:var(--panel)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;margin:0 0 14px}
+.num{font-size:.8rem;color:var(--muted);margin:0 0 4px}
+.gr{font-weight:600;margin:0 0 4px}
+.tr{font-size:.85rem;color:var(--muted);margin:0 0 12px}
+.opts{display:grid;gap:8px}
+.opts button{text-align:left;font:inherit;color:inherit;background:transparent;border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer}
+.opts button:hover:not(:disabled){border-color:var(--accent)}
+.opts button:disabled{cursor:default}
+.opts .right{border-color:var(--ok);background:var(--okbg)}
+.opts .wrong{border-color:var(--bad);background:var(--badbg)}
+.why{display:none;margin:12px 0 0;font-size:.9rem}
+.why.show{display:block}
+.why a{color:var(--accent)}
+.score{position:sticky;bottom:12px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.score b{font-family:Georgia,serif;font-weight:400;font-size:1.4rem}
+.cta{background:var(--panel);border:1px solid var(--accent);border-radius:10px;padding:18px;margin:24px 0 0}
+.cta a{color:var(--accent)}
+.cta h2{font-family:Georgia,serif;font-weight:400;margin:0 0 6px;font-size:1.3rem}
+.foot{color:var(--muted);font-size:.8rem;margin-top:28px}
+
+nav.top{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.9rem;margin:0 0 22px}
+nav.top a,.prose a,.toc a{color:var(--accent)}
+.prose h2{font-family:Georgia,serif;font-weight:400;font-size:1.35rem;margin:28px 0 8px}
+.prose ul{padding-left:20px}.prose li{margin:4px 0}
+details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0 0 12px}
+details summary{cursor:pointer;color:var(--accent);margin-top:8px}
+.q-gr{font-weight:600}.q-tr{font-size:.85rem;color:var(--muted)}
+.q-opts{margin:8px 0 0;padding:0;list-style:none}
+.toc{columns:2;padding-left:20px}@media(max-width:560px){.toc{columns:1}}
+table.facts-t{border-collapse:collapse;width:100%}table.facts-t td{border-bottom:1px solid var(--line);padding:8px 6px;vertical-align:top}
+table.facts-t td:first-child{color:var(--muted);width:40%}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+.prev-tabs{display:flex;gap:6px;margin:0 0 10px;flex-wrap:wrap}
+.prev-tabs button,.btn{font:inherit;font-size:.9rem;color:var(--fg);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:5px 14px;cursor:pointer}
+.prev-tabs button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+label{display:block;font-size:.85rem;color:var(--muted);margin:0 0 4px}
+input[type=text],select{font:inherit;width:100%;max-width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--fg)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 10px}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+pre.code{white-space:pre-wrap;word-break:break-all;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;margin:0 0 10px}
+.copied{color:var(--ok);font-size:.85rem;margin-left:8px}
+.prose h3{font-size:1.02rem;margin:18px 0 6px}
+code{font:13px ui-monospace,Menlo,Consolas,monospace;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;word-break:break-word}
+details.lang summary{font-weight:600;margin:0}
+details.lang[open] summary{margin-bottom:8px}
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="./">Free practice test</a><a href="exam-guide.html">Exam guide</a><a href="exam-guide-el.html">Οδηγός (ελληνικά)</a><a href="exam-guide-ru.html">Гид (русский)</a><a href="topics.html">The 14 topics</a><a href="greek-trap-words.html">Greek trap words</a><a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack">Full pack €12</a></nav>
+<h1>Free “question of the day” for your website</h1>
+<p class="lead">If your clients or members are preparing for the Cyprus citizenship or long-term residence exam, you can show them one practice question a day on your own site. It's in Greek, like the real exam, with an English or Russian translation and a sourced answer. It's free and uses no cookies. Copying the code takes about a minute.</p>
+<ul class="facts"><li>Free</li><li>No cookies, no tracking</li><li>Fits any width</li><li>EN or RU translation</li><li>New question every day</li></ul>
+
+<h2 style="font-family:Georgia,serif;font-weight:400">Live preview</h2>
+<div class="prev-tabs" role="group" aria-label="Preview language">
+<button type="button" data-l="en" aria-pressed="true">English</button><button type="button" data-l="ru" aria-pressed="false">Русский</button><button type="button" data-t="dark" aria-pressed="false">Dark theme</button>
+</div>
+<div id="preview"><div data-cep-qotd data-lang="en" data-partner="embed-preview"></div></div>
+
+<h2 style="font-family:Georgia,serif;font-weight:400">Get your code</h2>
+<div class="card">
+<div class="row">
+<div><label for="pn">Your site or organisation (one word, for the link)</label><input id="pn" type="text" value="yourname" maxlength="40" autocomplete="off" spellcheck="false"></div>
+<div><label for="pl">Translation language</label><select id="pl"><option value="en">English</option><option value="ru">Русский</option></select></div>
+</div>
+<div class="row">
+<div><label for="pt">Colours</label><select id="pt"><option value="light">Light (default)</option><option value="dark">Dark</option><option value="auto">Follow the visitor's device</option></select></div>
+</div>
+<pre class="code" id="snip"></pre>
+<button type="button" class="btn primary" id="copy">Copy code</button><span class="copied" id="copied" hidden>Copied</span>
+</div>
+
+<div class="prose">
+<details class="lang" open><summary>English: how to add it</summary>
+<ol>
+<li>Copy the code above.</li>
+<li>Paste it where you want the question to appear:
+<ul><li><strong>WordPress:</strong> edit the page, add a <em>Custom HTML</em> block, paste and update. In a sidebar, use a <em>Custom HTML</em> widget.</li>
+<li><strong>Wix:</strong> Add → Embed code → <em>Embed HTML</em>, paste, then set a height of about 520 px.</li>
+<li><strong>Squarespace:</strong> add a <em>Code</em> block and paste.</li>
+<li><strong>Any other site:</strong> paste it into the page HTML.</li></ul></li>
+<li>That's it. The question changes every day at midnight Cyprus time.</li>
+</ol>
+<p>The widget takes the full width of the box you put it in, so it works in a wide column or a narrow sidebar. Its styles sit in a shadow DOM, so they can't change your page's styles and your page's styles can't break it. It doesn't set cookies or use local storage. The only network request is one small file, <code>qotd.json</code>, from GitHub Pages. The footer link to our free practice test includes your name (<code>?utm_source=embed&amp;p=yourname</code>), so we can see which sites send visitors. It's free and there's nothing to sign up for.</p>
+</details>
+<details class="lang"><summary>Ελληνικά: πώς να το προσθέσετε</summary>
+<ol>
+<li>Αντιγράψτε τον κώδικα παραπάνω.</li>
+<li>Επικολλήστε τον εκεί όπου θέλετε να εμφανίζεται η ερώτηση:
+<ul><li><strong>WordPress:</strong> προσθέστε ένα μπλοκ <em>Προσαρμοσμένη HTML</em> (Custom HTML) και επικολλήστε.</li>
+<li><strong>Wix:</strong> Add → Embed code → <em>Embed HTML</em>, ύψος περίπου 520 px.</li>
+<li><strong>Squarespace:</strong> μπλοκ <em>Code</em>.</li>
+<li><strong>Οποιαδήποτε άλλη σελίδα:</strong> επικολλήστε τον στον κώδικα HTML.</li></ul></li>
+<li>Αυτό ήταν. Η ερώτηση αλλάζει κάθε μέρα τα μεσάνυχτα, ώρα Κύπρου.</li>
+</ol>
+<p>Η εφαρμογή είναι δωρεάν, δεν χρησιμοποιεί cookies και προσαρμόζεται στο πλάτος της σελίδας σας. Τα στυλ της είναι απομονωμένα, οπότε δεν επηρεάζουν το θέμα της ιστοσελίδας σας. Οι ερωτήσεις είναι στα ελληνικά, όπως στην πραγματική εξέταση, με μετάφραση στα αγγλικά ή στα ρωσικά και πηγή για κάθε απάντηση.</p>
+</details>
+<details class="lang"><summary>Русский: как установить</summary>
+<ol>
+<li>Скопируйте код выше (для русского перевода выберите «Русский»).</li>
+<li>Вставьте его туда, где должен появиться вопрос:
+<ul><li><strong>WordPress:</strong> блок <em>«Произвольный HTML»</em> (Custom HTML) на странице или виджет в боковой колонке.</li>
+<li><strong>Wix:</strong> Add → Embed code → <em>Embed HTML</em>, высота около 520 px.</li>
+<li><strong>Squarespace:</strong> блок <em>Code</em>.</li>
+<li><strong>Любой другой сайт:</strong> вставьте в HTML страницы.</li></ul></li>
+<li>Готово. Вопрос меняется каждый день в полночь по времени Кипра.</li>
+</ol>
+<p>Виджет бесплатный, без cookies и слежки, подстраивается под ширину колонки. Его стили изолированы и не ломают тему сайта. Вопросы на греческом, как на настоящем экзамене, с переводом на русский или английский и источником для каждого ответа.</p>
+</details>
+<h2>Who it's for</h2>
+<p>It suits relocation and immigration advisers, law firms, language schools, Greek teachers, community groups and expat news sites in Cyprus. In short, any site whose readers apply for naturalisation or long-term residence. The questions come from our public practice material: the <a href="./">free practice test</a>, the <a href="topics.html">topic pages</a> and the <a href="greek-trap-words.html">Greek trap words</a>. Each answer links to an official or reputable source.</p>
+<p>Questions or a different language? Email <a href="mailto:cyprusexamprep@gmail.com">cyprusexamprep@gmail.com</a>.</p>
+</div>
+<p class="foot">Independent project, not affiliated with the Ministry of Education, Sport and Youth or any government body. The questions are practice material, not past exam papers. No pass is guaranteed.</p>
+</main>
+<script src="qotd.js"></script>
+<script>
+(function(){
+  var lang='en',theme='light';
+  function prev(){var p=document.getElementById('preview');p.innerHTML='';var d=document.createElement('div');d.setAttribute('data-cep-qotd','');d.setAttribute('data-lang',lang);d.setAttribute('data-partner','embed-preview');d.setAttribute('data-theme',theme);p.appendChild(d);window.CEPqotd&&CEPqotd.init();}
+  document.querySelectorAll('.prev-tabs [data-l]').forEach(function(b){b.onclick=function(){lang=b.getAttribute('data-l');document.querySelectorAll('.prev-tabs [data-l]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});prev();};});
+  var tb=document.querySelector('.prev-tabs [data-t]');tb.onclick=function(){theme=theme==='dark'?'light':'dark';tb.setAttribute('aria-pressed',theme==='dark');prev();};
+  var pn=document.getElementById('pn'),pl=document.getElementById('pl'),pt=document.getElementById('pt'),sn=document.getElementById('snip');
+  function code(){var n=(pn.value||'').toLowerCase().replace(/[^a-z0-9_-]/g,'').slice(0,40)||'yourname';
+    var t=pt.value==='light'?'':' data-theme="'+pt.value+'"';
+    sn.textContent='<div id="cep-qotd" data-lang="'+pl.value+'" data-partner="'+n+'"'+t+'></div>\n<script src="https://cyprus-exam-prep.github.io/qotd.js" async><\/script>';}
+  pn.oninput=pl.onchange=pt.onchange=code;code();
+  document.getElementById('copy').onclick=function(){var t=sn.textContent,c=document.getElementById('copied');
+    function ok(){c.hidden=false;setTimeout(function(){c.hidden=true},2000);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){sel();});}else sel();
+    function sel(){var r=document.createRange();r.selectNodeContents(sn);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');ok();}catch(e){}}};
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2d2b837cc6e74b8fa18a1feb42b4cfab"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

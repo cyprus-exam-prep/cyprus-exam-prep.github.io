@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CyprusExamPrep//Exam dates//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cal-exam-6mar-ru@cyprus-exam-prep.github.io
+DTSTAMP:20261104T080000Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Экзамен на гражданство Кипра (полити
+ ческая и социальная реальность Кипра) – 
+ сб\, 6 марта 2027
+DESCRIPTION:25 вопросов с вариантами ответа на 
+ греческом\, 45 минут\, проходной балл 60% (15/2
+ 5).\nВзять с собой: удостоверение личности
+ \, паспорт или ARC и карточку кандидата. Те
+ лефоны\, смарт-часы\, записи и словари зап
+ рещены.\nПроверьте детали в объявлении М
+ инистерства образования: https://enimerosi.moec.gov.
+ cy/archeia/1/ypp19510a\nТренировка: https://cyprus-exam-prep.git
+ hub.io/?utm_source=calendar
+URL:https://enimerosi.moec.gov.cy/archeia/1/ypp19510a
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Напоминание: Экзамен на гражданст
+ во Кипра (политическая и социальная реал
+ ьность Кипра) – сб\, 6 марта 2027
+TRIGGER:-P13DT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CyprusExamPrep//Exam dates//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cal-apply-6mar-ru@cyprus-exam-prep.github.io
+DTSTAMP:20261104T080000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270119
+SUMMARY:Подать заявление на экзамен 6 марта 20
+ 27 (11–18 января)
+DESCRIPTION:Заявления на экзамен 6 марта 2027 при
+ нимаются 11–18 января 2027.\nСбор €20\, оплата
+  через JCC Smart при подаче заявления.\nПрове
+ рьте детали в объявлении Министерства о
+ бразования: https://enimerosi.moec.gov.cy/archeia/1/ypp19510a\n
+ Гид: https://cyprus-exam-prep.github.io/exam-guide-ru.html?utm_source=c
+ alendar
+URL:https://enimerosi.moec.gov.cy/archeia/1/ypp19510a
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Напоминание: Подать заявление на э
+ кзамен 6 марта 2027 (11–18 января)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

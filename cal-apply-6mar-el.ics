@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CyprusExamPrep//Exam dates//EL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cal-apply-6mar-el@cyprus-exam-prep.github.io
+DTSTAMP:20261104T080000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270119
+SUMMARY:Αίτηση για τις εξετάσεις της 6ης Μαρτ
+ ίου 2027 (11–18 Ιανουαρίου)
+DESCRIPTION:Οι αιτήσεις για τις εξετάσεις της 6
+ ης Μαρτίου 2027 υποβάλλονται 11–18 Ιανουαρί
+ ου 2027.\nΤέλος €20\, πληρώνεται μέσω JCC Smart μ
+ ε την αίτηση.\nΕπιβεβαιώστε τις λεπτομέρ
+ ειες στην ανακοίνωση του Υπουργείου Παι
+ δείας: https://enimerosi.moec.gov.cy/archeia/1/ypp19510a\nΟδηγό
+ ς: https://cyprus-exam-prep.github.io/exam-guide-el.html?utm_source=calen
+ dar
+URL:https://enimerosi.moec.gov.cy/archeia/1/ypp19510a
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Υπενθύμιση: Αίτηση για τις εξετάσε
+ ις της 6ης Μαρτίου 2027 (11–18 Ιανουαρίου)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

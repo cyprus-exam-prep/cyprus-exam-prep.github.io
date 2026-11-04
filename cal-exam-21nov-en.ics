@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CyprusExamPrep//Exam dates//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cal-exam-21nov-en@cyprus-exam-prep.github.io
+DTSTAMP:20261104T080000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Cyprus citizenship exam (Political and Social Reality of Cyprus) 
+ – Sat 21 Nov 2026
+DESCRIPTION:Exam on the Basic Elements of the Contemporary Political and So
+ cial Reality of Cyprus.\n25 multiple-choice questions in Greek\, 45 minute
+ s\, pass mark 60% (15/25).\nBring your ID card\, passport or ARC and your 
+ candidate card. No phones\, smartwatches\, notes or dictionaries.\nConfirm
+  the details in the Ministry of Education announcement: https://enimerosi.
+ moec.gov.cy/archeia/1/ypp19510a\nLast-minute practice: https://cyprus-exam
+ -prep.github.io/?utm_source=calendar
+URL:https://enimerosi.moec.gov.cy/archeia/1/ypp19510a
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Cyprus citizenship exam (Political and Social Reality
+  of Cyprus) – Sat 21 Nov 2026
+TRIGGER:-P6DT15H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Cyprus citizenship exam (Political and Social Reality
+  of Cyprus) – Sat 21 Nov 2026
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

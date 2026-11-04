@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cyprus citizenship exam 2026–2027: dates, fee, pass mark, how to apply</title>
 <link rel="canonical" href="https://cyprus-exam-prep.github.io/exam-guide.html">
+<link rel="alternate" hreflang="en" href="https://cyprus-exam-prep.github.io/exam-guide.html">
+<link rel="alternate" hreflang="el" href="https://cyprus-exam-prep.github.io/exam-guide-el.html">
+<link rel="alternate" hreflang="ru" href="https://cyprus-exam-prep.github.io/exam-guide-ru.html">
+<link rel="alternate" hreflang="x-default" href="https://cyprus-exam-prep.github.io/exam-guide.html">
 <meta name="description" content="Cyprus citizenship and long-term residence exam: 25 Greek multiple-choice questions, 45 minutes, 60% pass mark, €20 fee. Dates for 2026–2027 and how to prepare.">
 <meta property="og:title" content="Cyprus citizenship exam 2026–2027: dates, fee, pass mark, how to apply">
 <meta property="og:description" content="Cyprus citizenship and long-term residence exam: 25 Greek multiple-choice questions, 45 minutes, 60% pass mark, €20 fee. Dates for 2026–2027 and how to prepare.">
@@ -56,11 +60,52 @@ details summary{cursor:pointer;color:var(--accent);margin-top:8px}
 .toc{columns:2;padding-left:20px}@media(max-width:560px){.toc{columns:1}}
 table.facts-t{border-collapse:collapse;width:100%}table.facts-t td{border-bottom:1px solid var(--line);padding:8px 6px;vertical-align:top}
 table.facts-t td:first-child{color:var(--muted);width:40%}
+
+/* --- added: sitting switch, offers, weak topics, calendar, footer --- */
+html[data-sitting="mar"] .v-nov,html:not([data-sitting="mar"]) .v-mar,html[data-founding="off"] .founding-only,html[data-march27="off"] .march27-only,html:not([data-march27="off"]) .m27-off,html[data-past="1"] .sitting,html[data-past="1"] .pre-cut{display:none!important}
+html:not([data-sitting="mar"]):not([data-founding="off"]) .nf{display:none}
+.sitting{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 18px}
+.sitting .lbl{font-size:.85rem;color:var(--muted);flex-basis:100%}
+.sitting button{font:inherit;font-size:.9rem;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;text-align:left}
+.sitting button:hover{border-color:var(--accent)}
+.sitting button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.mar-panel{background:var(--panel);border:1px solid var(--accent);border-radius:10px;padding:14px 16px;margin:0 0 20px}
+.mar-panel p{margin:0 0 8px}
+.mar-panel a,.offer a,.weak a,.cal a,.ask a,.group a,.groups a,.promise a{color:var(--accent)}
+a.btn{display:inline-block;background:var(--accent);color:var(--bg)!important;text-decoration:none;border-radius:8px;padding:10px 16px;font-weight:600;line-height:1.3}
+a.btn:hover{filter:brightness(1.1)}
+a.btn-sm{display:inline-block;margin-top:6px;border:1px solid var(--accent);border-radius:999px;padding:5px 12px;font-size:.88rem;text-decoration:none}
+.trust{font-size:.78rem;color:var(--muted);margin:8px 0 0}
+.ask,.group,.groups,.promise{font-size:.9rem;margin:8px 0 0}
+.small{font-size:.85rem;color:var(--muted)}
+.band{font-weight:600;margin:0 0 4px}
+.band a,#done .kit a{color:var(--accent)}
+#done #card{max-width:min(100%,420px)}
+#done h3,.cal h3,.weak h3,.offer h3{font-family:Georgia,serif;font-weight:400;font-size:1.1rem;margin:0 0 8px}
+.weak,.offer,.cal,.shareblk{border-top:1px solid var(--line);padding-top:14px;margin-top:16px}
+.weak ul,.cal ul{list-style:none;margin:0;padding:0}
+.weak li{padding:10px 0;border-bottom:1px dashed var(--line)}
+.weak li:last-child{border-bottom:0}
+.weak .grn{color:var(--muted);font-size:.9rem}
+.cal li{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line)}
+.cal li:last-child{border-bottom:0}
+.calbtns{display:flex;gap:12px;flex-wrap:wrap}
+.prose .cal{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0}
+.sitefoot{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;margin:20px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.sitefoot a{color:var(--accent)}
 </style>
+<script>
+(function(){var d=document.documentElement,t="";try{var p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Nicosia",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date()),o={};p.forEach(function(x){o[x.type]=x.value});t=o.year+"-"+o.month+"-"+o.day}catch(e){t=new Date(Date.now()+72e5).toISOString().slice(0,10)}
+var past=t>="2026-11-22",m27=t<="2027-01-18",s=null;if(!past){try{s=window.localStorage.getItem("cep-sitting")}catch(e){}}
+d.setAttribute("data-sitting",past||s==="mar"?"mar":"nov");d.setAttribute("data-founding",past?"off":"on");d.setAttribute("data-march27",m27?"on":"off");if(past)d.setAttribute("data-past","1");
+window.CEP={today:t,past:past,m27:m27,hooks:[]};})();
+</script>
 </head>
 <body>
 <main>
-<nav class="top"><a href="./">Free practice test</a><a href="exam-guide.html">Exam guide</a><a href="exam-guide-el.html">Οδηγός (ελληνικά)</a><a href="exam-guide-ru.html">Гид (русский)</a><a href="topics.html">The 14 topics</a><a href="greek-trap-words.html">Greek trap words</a><a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack">Full pack €12</a></nav>
+<nav class="top"><a href="./">Free practice test</a><a href="exam-guide.html">Exam guide</a><a href="exam-guide-el.html">Οδηγός (ελληνικά)</a><a href="exam-guide-ru.html">Гид (русский)</a><a href="topics.html">The 14 topics</a><a href="greek-trap-words.html">Greek trap words</a><a href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack?utm_source=nav-pack" data-f="click-pack">Full pack €12</a></nav>
+<div class="sitting" role="group" aria-labelledby="sitlbl"><span class="lbl" id="sitlbl">When is your exam?</span><button type="button" data-sit="nov" aria-pressed="true">I'm sitting on 21 Nov</button><button type="button" data-sit="mar" aria-pressed="false">6 Mar 2027 / haven't applied yet</button></div>
+<div class="mar-panel v-mar"><p><strong>Sitting on 6 March 2027?</strong> Applications are open 11–18 January 2027 (€20 fee, paid via JCC Smart). <a href="#cal">Add the dates to your calendar</a></p><p>Buy now, the March update reaches you free.<span class="march27-only"> 35% off with code MARCH27 until 18 January 2027.</span></p><p><a class="btn march27-only" href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/MARCH27?utm_source=march" data-f="click-march27">Get the pack with MARCH27 — €7.80</a><a class="btn m27-off" href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack?utm_source=march" data-f="click-pack">Get the full pack — €12 incl. VAT</a></p><p class="trust">Made in Cyprus · from the official syllabus · Who's who checked 31 Oct 2026 · 30-day refund · secure checkout by Gumroad</p></div>
 <h1>Cyprus citizenship exam 2026–2027: dates, fee, format and how to pass</h1>
 <p class="lead">Everything about the exam on the <em>Basic Elements of the Contemporary Political and Social Reality of Cyprus</em>, required for naturalisation and long-term residence applications. Checked 31 October 2026 against the <a href='https://enimerosi.moec.gov.cy/archeia/1/ypp19510a'>Ministry of Education announcement and syllabus</a>.</p>
 <table class="facts-t">
@@ -74,6 +119,7 @@ table.facts-t td:first-child{color:var(--muted);width:40%}
 <h2>Exam dates</h2>
 <ul><li><strong>Saturday 21 November 2026</strong> — applications closed</li><li><strong>Saturday 6 March 2027</strong> — apply 11–18 January 2027</li><li><strong>Saturday 3 July 2027</strong> — apply 17–24 May 2027</li><li><strong>Saturday 20 November 2027</strong> — apply 4–11 October 2027</li></ul>
 <p>Always confirm dates and application windows on the <a href='https://enimerosi.moec.gov.cy/archeia/1/ypp19510a'>Ministry of Education announcement and syllabus</a> before applying.</p>
+<div class="cal" id="cal"><h3>Add to my calendar</h3><ul><li class="pre-cut"><span>Exam: Sat 21 Nov 2026</span> <span class="calbtns"><a href="cal-exam-21nov-en.ics" download data-f="click-calendar-ics">.ics (iPhone, Outlook)</a> <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Cyprus%20citizenship%20exam%20%28Political%20and%20Social%20Reality%20of%20Cyprus%29%20%E2%80%93%20Sat%2021%20Nov%202026&amp;dates=20261121%2F20261122&amp;details=Exam%20on%20the%20Basic%20Elements%20of%20the%20Contemporary%20Political%20and%20Social%20Reality%20of%20Cyprus.%0A25%20multiple-choice%20questions%20in%20Greek%2C%2045%20minutes%2C%20pass%20mark%2060%25%20%2815%2F25%29.%0ABring%20your%20ID%20card%2C%20passport%20or%20ARC%20and%20your%20candidate%20card.%20No%20phones%2C%20smartwatches%2C%20notes%20or%20dictionaries.%0AConfirm%20the%20details%20in%20the%20Ministry%20of%20Education%20announcement%3A%20https%3A%2F%2Fenimerosi.moec.gov.cy%2Farcheia%2F1%2Fypp19510a%0ALast-minute%20practice%3A%20https%3A%2F%2Fcyprus-exam-prep.github.io%2F%3Futm_source%3Dcalendar&amp;ctz=Asia%2FNicosia" target="_blank" rel="noopener" data-f="click-calendar-google">Google Calendar</a></span></li><li class=""><span>Apply for 6 Mar: 11–18 Jan 2027</span> <span class="calbtns"><a href="cal-apply-6mar-en.ics" download data-f="click-calendar-ics">.ics (iPhone, Outlook)</a> <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Apply%20for%20the%206%20Mar%202027%20Cyprus%20citizenship%20exam%20%2811%E2%80%9318%20Jan%29&amp;dates=20270111%2F20270119&amp;details=Applications%20for%20the%206%20March%202027%20exam%20are%20open%2011%E2%80%9318%20January%202027.%0AFee%20%E2%82%AC20%2C%20paid%20via%20JCC%20Smart%20when%20you%20apply.%0AConfirm%20the%20details%20in%20the%20Ministry%20of%20Education%20announcement%3A%20https%3A%2F%2Fenimerosi.moec.gov.cy%2Farcheia%2F1%2Fypp19510a%0AExam%20guide%3A%20https%3A%2F%2Fcyprus-exam-prep.github.io%2Fexam-guide.html%3Futm_source%3Dcalendar&amp;ctz=Asia%2FNicosia" target="_blank" rel="noopener" data-f="click-calendar-google">Google Calendar</a></span></li><li class=""><span>Exam: Sat 6 Mar 2027</span> <span class="calbtns"><a href="cal-exam-6mar-en.ics" download data-f="click-calendar-ics">.ics (iPhone, Outlook)</a> <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Cyprus%20citizenship%20exam%20%28Political%20and%20Social%20Reality%20of%20Cyprus%29%20%E2%80%93%20Sat%206%20Mar%202027&amp;dates=20270306%2F20270307&amp;details=Exam%20on%20the%20Basic%20Elements%20of%20the%20Contemporary%20Political%20and%20Social%20Reality%20of%20Cyprus.%0A25%20multiple-choice%20questions%20in%20Greek%2C%2045%20minutes%2C%20pass%20mark%2060%25%20%2815%2F25%29.%0ABring%20your%20ID%20card%2C%20passport%20or%20ARC%20and%20your%20candidate%20card.%20No%20phones%2C%20smartwatches%2C%20notes%20or%20dictionaries.%0AConfirm%20the%20details%20in%20the%20Ministry%20of%20Education%20announcement%3A%20https%3A%2F%2Fenimerosi.moec.gov.cy%2Farcheia%2F1%2Fypp19510a%0APractice%3A%20https%3A%2F%2Fcyprus-exam-prep.github.io%2F%3Futm_source%3Dcalendar&amp;ctz=Asia%2FNicosia" target="_blank" rel="noopener" data-f="click-calendar-google">Google Calendar</a></span></li></ul><p class="small">Reminders: 7 days and 1 day before 21 Nov; 10 Jan for the application window; 14 days before 6 Mar.</p></div>
 <h2>What the exam covers</h2>
 <p>Questions come from <a href="topics.html">14 syllabus areas</a>: current affairs, modern history since 1960, customs and traditions, geography, the political system and office-holders, the economy, entry requirements, telecommunications, climate, languages and religions, currency, holidays and working hours, health and safety, and transport.</p>
 <h2>How to prepare</h2>
@@ -85,9 +131,51 @@ table.facts-t td:first-child{color:var(--muted);width:40%}
 <li>In the last week, re-check current office-holders: ministers and party leaders change.</li>
 </ol>
 </div>
-<section class='cta'><h2>Practise now</h2><p>Take the <a href='./'>free 15-question practice test</a> (Greek with English and Russian translations, every answer sourced). For full preparation, the <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack'>Cyprus Culture Exam Pack (€12 incl. VAT)</a> has 2 full timed mocks, 99 questions with sourced answers, all 14 topics and a Greek–English–Russian glossary. One free question a day on <a href='https://t.me/cyprusexamprep'>Telegram</a>.</p><p class='founding'><strong>Founding offer:</strong> the first 20 buyers pay €6 instead of €12 with code FOUNDING20, until 21 November. <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/FOUNDING20'>Get it for €6</a></p></section>
+<section class='cta'><h2>Practise now</h2><p>Take the <a href='./'>free 15-question practice test</a> (Greek with English and Russian translations, every answer sourced). For full preparation, the <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack?utm_source=guide-en' data-f='click-pack'>Cyprus Culture Exam Pack (€12 incl. VAT)</a> has 2 full timed mocks, 99 questions with sourced answers, all 14 topics and a Greek–English–Russian glossary. One free question a day on <a href='https://t.me/cyprusexamprep'>Telegram</a>.</p><p class='founding v-nov founding-only'><strong>Founding offer:</strong> the first 20 buyers pay €6 instead of €12 with code FOUNDING20, until 21 November. <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/FOUNDING20?utm_source=guide-en-founding' data-f='click-founding20'>Get it for €6</a></p><p class='v-mar march27-only'><strong>Sitting on 6 March?</strong> 35% off with code MARCH27 until 18 January 2027, and the March update reaches you free. <a href='https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/MARCH27?utm_source=march' data-f='click-march27'>Get it for €7.80</a></p>
+<p class="promise v-nov">Didn't pass on 21 Nov? Email us and get the 6 Mar 2027 edition free — or a full refund if you prefer, until 31 Mar 2027. <a href="mailto:cyprusexamprep@gmail.com?subject=21%20Nov%20result%3A%20free%206%20Mar%20edition%20or%20refund">cyprusexamprep@gmail.com</a></p>
+<p class="group">Studying with your partner or class? <a class="v-nov founding-only" href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack/FOUNDING20?utm_source=guide-en-group" data-f="click-founding20">3 people for €24</a><a class="nf" href="https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack?utm_source=guide-en-group" data-f="click-pack">3 people for €24</a><span class="v-nov founding-only"> (€12 with FOUNDING20 until 21 Nov)</span></p>
+<p class="trust">Made in Cyprus · from the official syllabus · Who's who checked 31 Oct 2026 · 30-day refund · secure checkout by Gumroad</p>
+<p class="ask">Ask a question before you buy: <a href="mailto:cyprusexamprep@gmail.com?subject=Question%20before%20buying%20the%20Cyprus%20exam%20pack">email</a> or <a href="https://t.me/cyprusexamprep">Telegram</a>. We reply within 24 h in Greek, English or Russian.</p>
+<p class="groups">Join others sitting on <span class="v-nov">21 Nov</span><span class="v-mar">6 Mar</span>: <a href="https://www.facebook.com/groups/29466740929578859" target="_blank" rel="noopener">Facebook study group</a> · <a href="https://t.me/cyprusexam21nov" target="_blank" rel="noopener">Telegram chat</a></p></section>
 <p class="foot">Independent study aid by CyprusExamPrep. Not affiliated with or endorsed by the Ministry of Education, Sport and Youth or any government body. No pass is guaranteed. Checked 31 October 2026.</p>
+<nav class="sitefoot" aria-label="More pages"><a href="about.html">About us</a><a href="whos-who.html">Who's who</a><a href="exam-facts.html">Exam facts</a><a href="resources.html">Free resources</a><a href="syllabus.html">Syllabus</a><a href="embed.html">Embed the test</a><a href="ru/" lang="ru">Тест на русском</a><a href="ar.html" lang="ar" dir="rtl">العربية</a><a href="mock-14nov.html">Mock exam 14 Nov</a></nav>
 </main>
+<script>
+/* Sitting switch (#46) + funnel virtual page views (#41). */
+(function(){
+var d=document.documentElement,CEP=window.CEP||{hooks:[]};
+function sync(){var v=d.getAttribute("data-sitting");document.querySelectorAll("[data-sit]").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-sit")===v?"true":"false")})}
+document.querySelectorAll("[data-sit]").forEach(function(b){b.addEventListener("click",function(){var v=b.getAttribute("data-sit");d.setAttribute("data-sitting",v);try{window.localStorage.setItem("cep-sitting",v)}catch(e){}sync();(CEP.hooks||[]).forEach(function(f){try{f(v)}catch(e){}})})});
+sync();
+/* Each funnel step is pushed once as a virtual path (/f/<name>) so Cloudflare Web Analytics
+   records it, then we step straight back so the visitor's Back button is unchanged. */
+var fired={},queue=[],busy=false,idle=[];
+function flush(){if(busy||queue.length)return;var a=idle;idle=[];a.forEach(function(f){f()})}
+function pump(){
+  if(busy)return;if(!queue.length){flush();return}
+  var name=queue.shift(),real=location.pathname,tail=location.search+location.hash,vpath="/f/"+name;
+  if(real.indexOf("/f/")===0){queue=[];flush();return}
+  var sr=null;try{sr=history.scrollRestoration;history.scrollRestoration="manual"}catch(e){}
+  try{history.pushState({cepvp:1},"",vpath+tail)}catch(e){}
+  if(location.pathname!==vpath){try{if(sr)history.scrollRestoration=sr}catch(e){}pump();return}
+  busy=true;var done=false;
+  function fin(){if(done)return;done=true;clearTimeout(tm);window.removeEventListener("popstate",fin);
+    if(location.pathname===vpath){try{history.replaceState(null,"",real+tail)}catch(e){}}
+    try{if(sr)history.scrollRestoration=sr}catch(e){}busy=false;pump()}
+  window.addEventListener("popstate",fin);var tm=setTimeout(fin,1200);history.back();
+}
+function vp(name){if(!name||fired[name])return false;fired[name]=1;queue.push(name);pump();return true}
+function whenIdle(f){if(!busy&&!queue.length){f();return}idle.push(f);setTimeout(function(){var i=idle.indexOf(f);if(i>=0){idle.splice(i,1);f()}},1500)}
+CEP.vp=vp;CEP.fired=fired;window.CEP=CEP;
+document.addEventListener("click",function(e){
+  var a=e.target.closest&&e.target.closest("[data-f]");if(!a)return;
+  var n=a.getAttribute("data-f");if(fired[n])return;
+  var sameTab=a.tagName==="A"&&/^https?:/i.test(a.href||"")&&!a.target&&!a.hasAttribute("download")&&!(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)&&e.button===0;
+  vp(n);
+  if(sameTab&&busy){e.preventDefault();var href=a.href;whenIdle(function(){location.href=href})}
+});
+})();
+</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2d2b837cc6e74b8fa18a1feb42b4cfab"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

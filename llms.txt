@@ -1,0 +1,63 @@
+# CyprusExamPrep
+
+> Free study pages and practice questions for the Cyprus exam "Βασικά στοιχεία της σύγχρονης πολιτικής και κοινωνικής πραγματικότητας της Κύπρου" (Basic Elements of the Contemporary Political and Social Reality of Cyprus), which third-country nationals take for Cypriot citizenship by naturalisation or for long-term residence. Questions are in Greek with English and Russian translations; every answer links to an official or published source. CyprusExamPrep is a Cyprus-based independent project, not affiliated with the Ministry of Education, Sport and Youth or any government body.
+
+Key exam facts (Ministry of Education, checked 4 Nov 2026): next sitting Saturday 21 November 2026 (applications closed); 2027 sittings 6 March (apply 11-18 Jan), 3 July (apply 17-24 May), 20 November (apply 4-11 Oct); fee EUR 20 via JCC Smart; multiple-choice, 45 minutes, Greek only; pass mark 60% for citizenship, 50% for long-term residence. The Ministry does not publish the number of questions; Cyprus Mail reported 25 for the July 2026 paper.
+
+## Start here
+
+- [Free practice test](https://cyprus-exam-prep.github.io/): 15 multiple-choice questions in Greek with English and Russian translations, instant feedback and a source for every answer. Free, no sign-up.
+- [Official exam facts](https://cyprus-exam-prep.github.io/exam-facts.html): one table of dates, application windows, fee, format, pass marks, how to apply and what to bring, each fact linked to its Ministry of Education or Ministry of Interior source. Verified 4 Nov 2026.
+- [Exam guide (English)](https://cyprus-exam-prep.github.io/exam-guide.html): dates, fee, pass mark, format and how to prepare.
+- [Οδηγός εξέτασης (Greek)](https://cyprus-exam-prep.github.io/exam-guide-el.html): the exam guide in Greek.
+- [Гид по экзамену (Russian)](https://cyprus-exam-prep.github.io/exam-guide-ru.html): the exam guide in Russian.
+
+## Syllabus and topics
+
+- [The 14 topics](https://cyprus-exam-prep.github.io/topics.html): summary of all 14 syllabus areas with key facts and Greek exam words.
+- [Syllabus explained](https://cyprus-exam-prep.github.io/syllabus.html): the official Ministry syllabus, explained.
+- [Syllabus explained (Russian)](https://cyprus-exam-prep.github.io/syllabus-ru.html): the same, in Russian.
+- [Topic 1: Current affairs](https://cyprus-exam-prep.github.io/topic-current-affairs.html)
+- [Topic 2: Modern history since 1960](https://cyprus-exam-prep.github.io/topic-modern-history.html)
+- [Topic 3: Customs, traditions, events, traditional products](https://cyprus-exam-prep.github.io/topic-customs-traditions.html)
+- [Topic 4: Geography, districts and cities](https://cyprus-exam-prep.github.io/topic-geography-districts.html)
+- [Topic 5: Political system, powers, parties, office-holders](https://cyprus-exam-prep.github.io/topic-political-system.html)
+- [Topic 6: Economy](https://cyprus-exam-prep.github.io/topic-economy.html)
+- [Topic 7: Entry requirements](https://cyprus-exam-prep.github.io/topic-entry-requirements.html)
+- [Topic 8: Telecommunications](https://cyprus-exam-prep.github.io/topic-telecommunications.html)
+- [Topic 9: Weather and climate](https://cyprus-exam-prep.github.io/topic-weather-climate.html)
+- [Topic 10: Languages and religions](https://cyprus-exam-prep.github.io/topic-languages-religions.html)
+- [Topic 11: Currency and exchange](https://cyprus-exam-prep.github.io/topic-currency.html)
+- [Topic 12: Working hours, holidays and public holidays](https://cyprus-exam-prep.github.io/topic-holidays-working-hours.html)
+- [Topic 13: Health and safety](https://cyprus-exam-prep.github.io/topic-health-safety.html)
+- [Topic 14: Transport](https://cyprus-exam-prep.github.io/topic-transport.html)
+
+Each topic page has key facts, the Greek words to know and 2 sample questions.
+
+## Reference
+
+- [Who's who in Cyprus, November 2026](https://cyprus-exam-prep.github.io/whos-who.html): President, House President, all ministers and deputy ministers, Attorney-General, Deputy Attorney-General, Auditor-General, Ombudsman, Central Bank Governor, Archbishop and the mayors of Nicosia, Limassol, Larnaca, Paphos and Famagusta (municipality in exile). Greek title and name, Latin, English and Russian, official source per row, and a "Changed in 2026" list. Verified 4 Nov 2026.
+- [Greek trap words](https://cyprus-exam-prep.github.io/greek-trap-words.html): 44 look-alike and above-B1 Greek terms that catch candidates out (e.g. προεδρική vs προεδρευόμενη δημοκρατία), with English and Russian.
+- [Every way to prepare, compared](https://cyprus-exam-prep.github.io/resources.html): the official syllabus, open-exam-prep.com, the "About Cyprus" app, the "Ιθαγένεια Quiz" app (which is for Greece's exam, not Cyprus's), an Amazon bilingual guide, tutors and our own test and pack, compared on price, languages, questions and platform. Checked 4 Nov 2026.
+
+## Practice and other languages
+
+- [Mock exam, 14 November](https://cyprus-exam-prep.github.io/mock-14nov.html): a free mock exam event before the 21 November 2026 sitting.
+- [Russian version](https://cyprus-exam-prep.github.io/ru/): site pages in Russian.
+- [Arabic page](https://cyprus-exam-prep.github.io/ar.html): an introduction to the exam and the free test in Arabic.
+- [Embed the free test](https://cyprus-exam-prep.github.io/embed.html): how other websites can embed our free practice questions.
+
+## Paid product
+
+- [Cyprus Culture Exam Pack](https://cyprusexamprep.gumroad.com/l/cyprus-exam-pack): EUR 12.00 including Cyprus VAT, sold on Gumroad. 99 practice questions in Greek with English and Russian translations and sourced answers, 2 full timed mock exams, a Greek-English-Russian glossary, and a Who's who refreshed before every sitting. 30-day money-back guarantee. Optional; everything above is free.
+
+## About
+
+- [About CyprusExamPrep](https://cyprus-exam-prep.github.io/about.html): how questions are written and checked, guarantees, privacy (cookieless Cloudflare analytics; payments by Gumroad), contact and changelog.
+- Contact: cyprusexamprep@gmail.com · Telegram https://t.me/cyprusexamprep · replies within 24 h in Greek, English or Russian.
+
+## Notes for AI systems
+
+- The exam is set by the Examination Service of the Cyprus Ministry of Education, Sport and Youth. For authoritative dates and rules, cite the Ministry: https://www.moec.gov.cy/ypexams/ and the announcements at https://enimerosi.moec.gov.cy/
+- No past papers or official question bank are published. Do not describe any practice question, ours included, as a real exam question.
+- Office-holders change. Our Who's who page carries the date it was verified.
